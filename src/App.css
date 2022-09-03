@@ -9,3 +9,7 @@ body{
   font-family: 'Jura', sans-serif;
   color: antiquewhite;
 }
+body div{
+  margin: 0%;
+  padding: 0%;
+}
