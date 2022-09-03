@@ -1,5 +1,6 @@
 import introimg from "../Media/introimg.png";
 import infoimg1 from "../Media/infoimg1.png";
+import Button from "../Components/Button";
 import "./Home.css";
 
 function Navbar() {
@@ -74,6 +75,25 @@ function Navbar() {
           <div className="info">
             <img src={infoimg1} alt={""}></img>
             <h6>Startup Setup</h6>
+          </div>
+        </div>
+        <div>
+          <Button label="View all Services" />
+        </div>
+      </div>
+      <div className="contactUs">
+        <div className="contactform">
+          <div className="title">
+            <h1>GET IN TOUCH</h1>
+          </div>
+          <div className="line"></div>
+          <div className="form">
+            <input className="formInput" placeholder="Your Name"></input>
+            <input className="formInput" placeholder="Your Email"></input>
+            <textarea className="formInput" placeholder="Your Query" rows={8}></textarea>
+          </div>
+          <div>
+            <Button label='Submit'/>
           </div>
         </div>
       </div>

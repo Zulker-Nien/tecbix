@@ -52,10 +52,12 @@
 .aboutUs{
     height: 100vh;
     padding: 0% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title{
-    padding-top: 12%;
     letter-spacing: 8px;
 }
 
@@ -89,4 +91,56 @@
     margin-left: 50%;
     transform: translateX(-50%);
     align-self: center;
+}
+.serviceinfo{
+  display: flex;
+  justify-content: center;
+}
+.info{
+  border: 2px solid #0D99A3;
+  border-radius: 6%;
+  padding: 4% 2%;
+  margin: 3% 1%;
+
+}
+.info img{
+  height: 8vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.info h6{
+  align-items: center;
+  letter-spacing: 2px;
+  font-size: 1em;
+  margin-top: 5%;
+  padding: 0%;
+}
+.contactUs{
+  height: 93vh;
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactform{
+  float: right;
+  width: 30%;
+}
+.contactform .line{
+  width:100%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 12%;
+}
+.formInput{
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid #0D99A3;
+  margin:5% 0%
+}
+.form textarea{
+  resize: none;
+  margin-bottom: 10%;
 }
