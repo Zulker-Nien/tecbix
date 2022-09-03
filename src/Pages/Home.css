@@ -1,0 +1,92 @@
+.intro {
+  display: inline-flex;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+  letter-spacing: 5px;
+  padding: 0% 10%;
+}
+
+.slogan {
+  min-width: 50%;
+  transform: translateY(-25%);
+}
+
+.name{
+  letter-spacing: 12px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8em;
+  width: fit-content;
+}
+.name h1 {
+  margin: 0%;
+}
+
+.headline {
+  color: #11fff1;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+}
+
+.catchphrase {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  align-items: center;
+}
+
+.introimg {
+  height: 100%;
+  display: flex;
+  min-width: 50%;
+  transform: translateX(-30%);
+}
+
+.introimg ing {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.aboutUs{
+    height: 100vh;
+    padding: 0% 10%;
+}
+
+.title{
+    padding-top: 12%;
+    letter-spacing: 8px;
+}
+
+.line{
+    background-color: #ca267b;
+    height: 2px;
+    width: 30%;
+}
+
+.text{
+    width: 38%;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+}
+
+.services{
+    height:100vh;
+    align-items: center;
+}
+.services .title{
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.services .line{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.services .text{
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+}
