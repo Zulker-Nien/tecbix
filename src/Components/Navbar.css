@@ -1,5 +1,6 @@
 .header {
   height: 15vh;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,7 +30,6 @@
   justify-content: center;
   align-items: center;
   padding: 3% 0%;
-
 }
 
 .menu li {
@@ -48,4 +48,3 @@
   color: #ca267b;
   border-bottom: 1px solid antiquewhite;
 }
-

@@ -1,15 +1,14 @@
-import './App.css';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import Home from './Pages/Home';
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
 
-function App() { 
-
+function App() {
   return (
-    <div>
-     <Navbar/>
-     <Home/>
-     <Footer/>
+    <div className="mainContainer">
+      <Navbar />
+      <Home />
+      <Footer />
     </div>
   );
 }

@@ -3,9 +3,9 @@ import infoimg1 from "../Media/infoimg1.png";
 import Button from "../Components/Button";
 import "./Home.css";
 
-function Navbar() {
+function Home() {
   return (
-    <div>
+    <div className="homeContainer">
       <div className="intro">
         <div className="slogan">
           <div className="name">
@@ -90,10 +90,14 @@ function Navbar() {
           <div className="form">
             <input className="formInput" placeholder="Your Name"></input>
             <input className="formInput" placeholder="Your Email"></input>
-            <textarea className="formInput" placeholder="Your Query" rows={8}></textarea>
+            <textarea
+              className="formInput"
+              placeholder="Your Query"
+              rows={8}
+            ></textarea>
           </div>
           <div>
-            <Button label='Submit'/>
+            <Button label="Submit" />
           </div>
         </div>
       </div>
@@ -101,4 +105,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Home;

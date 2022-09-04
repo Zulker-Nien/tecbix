@@ -1,10 +1,15 @@
+.homeContainer {
+  height: 100%;
+  width: 100%;
+}
 .intro {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   letter-spacing: 5px;
   padding: 0% 10%;
+  background-color: blue;
 }
 
 .slogan {
@@ -12,7 +17,7 @@
   transform: translateY(-25%);
 }
 
-.name{
+.name {
   letter-spacing: 12px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -49,98 +54,97 @@
   transform: translateX(-50%);
 }
 
-.aboutUs{
-    height: 100vh;
-    padding: 0% 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.aboutUs {
+  height: 100vh;
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.title{
-    letter-spacing: 8px;
+.title {
+  letter-spacing: 8px;
 }
 
-.line{
-    background-color: #ca267b;
-    height: 2px;
-    width: 30%;
+.line {
+  background-color: #ca267b;
+  height: 2px;
+  width: 30%;
 }
 
-.text{
-    width: 38%;
-    letter-spacing: 3px;
-    font-size: 1.2em;
+.text {
+  width: 38%;
+  letter-spacing: 3px;
+  font-size: 1.2em;
 }
 
-.services{
-    height:100vh;
-    align-items: center;
+.services {
+  height: 100vh;
+  align-items: center;
 }
-.services .title{
-    width: fit-content;
-    margin-left: 50%;
-    transform: translateX(-50%);
+.services .title {
+  width: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
-.services .line{
-    margin-left: 50%;
-    transform: translateX(-50%);
+.services .line {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
-.services .text{
-    width: fit-content;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    align-self: center;
+.services .text {
+  width: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  align-self: center;
 }
-.serviceinfo{
+.serviceinfo {
   display: flex;
   justify-content: center;
 }
-.info{
-  border: 2px solid #0D99A3;
+.info {
+  border: 2px solid #0d99a3;
   border-radius: 6%;
   padding: 4% 2%;
   margin: 3% 1%;
-
 }
-.info img{
+.info img {
   height: 8vh;
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.info h6{
+.info h6 {
   align-items: center;
   letter-spacing: 2px;
   font-size: 1em;
   margin-top: 5%;
   padding: 0%;
 }
-.contactUs{
+.contactUs {
   height: 93vh;
   padding: 0% 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.contactform{
+.contactform {
   float: right;
   width: 30%;
 }
-.contactform .line{
-  width:100%;
+.contactform .line {
+  width: 100%;
 }
-.form{
+.form {
   display: flex;
   flex-direction: column;
   margin-top: 12%;
 }
-.formInput{
+.formInput {
   background-color: transparent;
   border: transparent;
-  border-bottom: 2px solid #0D99A3;
-  margin:5% 0%
+  border-bottom: 2px solid #0d99a3;
+  margin: 5% 0%;
 }
-.form textarea{
+.form textarea {
   resize: none;
   margin-bottom: 10%;
 }
