@@ -1,7 +1,7 @@
 import introimg from "../Media/introimg.png";
 import infoimg1 from "../Media/infoimg1.png";
 import Button from "../Components/Button";
-import "./Home.css";
+import "./Home.scss";
 
 function Home() {
   return (
@@ -27,34 +27,26 @@ function Home() {
         </div>
       </div>
       <div className="aboutUs">
-        <div className="title">
-          <h1>Get to know us</h1>
-        </div>
+        <h1>Get to know us</h1>
         <div className="line"></div>
-        <div className="text">
-          <h6>
-            A tech-driven company that helps you make sense of your data and get
-            results. With a dedicated team of experts, we strive to be your most
-            reliable technology partner. Tecbix is built on a foundation of
-            innovation and quality. We don't just talk about being a flexible
-            partner for your business; we live
-          </h6>
-        </div>
+        <p>
+          A tech-driven company that helps you make sense of your data and get
+          results. With a dedicated team of experts, we strive to be your most
+          reliable technology partner. Tecbix is built on a foundation of
+          innovation and quality. We don't just talk about being a flexible
+          partner for your business; we live
+        </p>
       </div>
       <div className="services">
-        <div className="title">
-          <h1>What we do</h1>
-        </div>
+        <h1>What we do</h1>
         <div className="line"></div>
-        <div className="text">
-          <h6>
-            A tech-driven company that helps you make sense of your data and get
-            results. With a dedicated team of experts, we strive to be your most
-            reliable technology partner. Tecbix is built on a foundation of
-            innovation and quality. We don't just talk about being a flexible
-            partner for your business; we live
-          </h6>
-        </div>
+        <p>
+          A tech-driven company that helps you make sense of your data and get
+          results. With a dedicated team of experts, we strive to be your most
+          reliable technology partner. Tecbix is built on a foundation of
+          innovation and quality. We don't just talk about being a flexible
+          partner for your business; we live
+        </p>
         <div className="serviceinfo">
           <div className="info">
             <img src={infoimg1} alt={""}></img>
@@ -83,9 +75,7 @@ function Home() {
       </div>
       <div className="contactUs">
         <div className="contactform">
-          <div className="title">
-            <h1>GET IN TOUCH</h1>
-          </div>
+          <h1>GET IN TOUCH</h1>
           <div className="line"></div>
           <div className="form">
             <input className="formInput" placeholder="Your Name"></input>

@@ -1,9 +1,9 @@
 .footer {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   padding: 0% 5%;
   letter-spacing: 3px;
-  height: 7vh;
+  height: 10vh;
 }
 
 .socialMenu {
@@ -20,6 +20,3 @@
   margin: 50% 30%;
   transform: translateY(-50%);
 }
-
-
-

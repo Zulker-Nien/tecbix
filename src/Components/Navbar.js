@@ -1,10 +1,10 @@
 import logo from "../Media/logo.png";
-import './Navbar.css'
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <div className="header">
-      <div className="logo" >
+      <div className="logo">
         <img src={logo} alt={""}></img>
       </div>
       <ul className="menu">

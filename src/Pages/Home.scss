@@ -1,0 +1,145 @@
+.homeContainer {
+  height: 100%;
+  width: 100%;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 5px;
+  padding: 0% 5%;
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    .name {
+      letter-spacing: 12px;
+      font-size: 1.8em;
+      text-align: center;
+      h1 {
+        margin: 0%;
+      }
+    }
+    .headline {
+      text-align: center;
+      color: #11fff1;
+    }
+    .catchphrase {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  .introimg img {
+    width: 100%;
+  }
+}
+
+.aboutUs {
+  height: 100vh;
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    letter-spacing: 8px;
+    // font-size: 1.2em;
+  }
+  .line {
+    background-color: #ca267b;
+    height: 2px;
+    width: 30%;
+  }
+  p {
+    width: 50%;
+    font-weight: 300;
+  }
+}
+
+.services {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    letter-spacing: 8px;
+  }
+  .line {
+    height: 2px;
+    width: 30%;
+    background-color: #ca267b;
+  }
+  p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .serviceinfo {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0;
+    // background-color: #11fff1;
+    .info {
+      height: 100%;
+      width: 15%;
+      border: 2px solid #0d99a3;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 8vh;
+      }
+      h6 {
+        letter-spacing: 2px;
+        font-size: 1em;
+        padding: 0%;
+      }
+    }
+  }
+}
+
+.contactUs {
+  height: 90vh;
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  .contactform {
+    float: right;
+    width: 30%;
+    h1 {
+      letter-spacing: 8px;
+    }
+    .line {
+      height: 2px;
+      width: 30%;
+      background-color: #ca267b;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12%;
+    }
+    .formInput {
+      background-color: transparent;
+      border: transparent;
+      border-bottom: 2px solid #0d99a3;
+      margin: 5% 0%;
+    }
+    .form textarea {
+      resize: none;
+      margin-bottom: 10%;
+    }
+  }
+}
