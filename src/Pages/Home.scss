@@ -12,7 +12,7 @@
   letter-spacing: 5px;
   z-index: 3;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   @media screen and (max-width: 1224px) {
     justify-content: center;
   }
@@ -68,6 +68,7 @@
 
     @media screen and (max-width: 1224px) {
       font-size: 1.4em;
+      text-align: center;
     }
   }
   .line {
@@ -75,6 +76,10 @@
     height: 2px;
     width: 30%;
     z-index: 2;
+
+    @media screen and (max-width: 1224px) {
+      width: 100%;
+    }
   }
   p {
     width: 50%;
@@ -118,6 +123,10 @@
     width: 30%;
     background-color: #ca267b;
     z-index: 3;
+
+    @media screen and (max-width: 1224px) {
+      width: 80%;
+    }
   }
   p {
     width: 50%;
@@ -127,7 +136,7 @@
     line-height: 2rem;
     z-index: 3;
     @media screen and (max-width: 1224px) {
-      width: 90vw;
+      width: 80vw;
       text-align: justify;
     }
   }
@@ -141,7 +150,6 @@
 
     @media screen and (max-width: 1224px) {
       width: 100%;
-      height: 40%;
     }
     .swiper-slide {
       @media screen and (max-width: 1224px) {
@@ -161,8 +169,8 @@
       align-items: center;
       z-index: 3;
       @media screen and (max-width: 1224px) {
-        height: 80%;
-        width: 75%;
+        height: 70%;
+        width: 65%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -174,6 +182,7 @@
         letter-spacing: 2px;
         font-size: 1em;
         padding: 0%;
+        margin: 0;
         z-index: 3;
       }
     }
