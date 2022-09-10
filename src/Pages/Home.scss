@@ -192,6 +192,11 @@
   }
   .serviceButton {
     z-index: 3;
+    transition: 0.1s linear all;
+    cursor: pointer;
+  }
+  .serviceButton:hover {
+    scale: 0.9;
   }
 }
 
@@ -257,6 +262,14 @@
       textarea {
         resize: none;
         margin-bottom: 10%;
+      }
+      .contactButton {
+        z-index: 3;
+        transition: 0.1s linear all;
+        cursor: pointer;
+      }
+      .contactButton:hover {
+        scale: 0.9;
       }
     }
   }

@@ -126,9 +126,7 @@ function Home() {
           </div>
         )}
         <div className="serviceButton">
-          {/* <Button label="View all Services" /> */}
-
-          <img src={serviceImg} alt={""}></img>
+          <Button label="View all Services" />
         </div>
       </div>
       <div className="contactUs">
@@ -142,7 +140,7 @@ function Home() {
             <input placeholder="Your Name"></input>
             <input placeholder="Your Email"></input>
             <textarea placeholder="Your Query" rows={8}></textarea>
-            <div>
+            <div className="contactButton">
               <Button label="Submit" />
             </div>
           </form>
