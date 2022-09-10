@@ -3,7 +3,6 @@ import infoimg1 from "../Media/infoimg1.png";
 import Button from "../Components/Button";
 import HomeBgImage from "../Components/HomeBgImage";
 import { useMediaQuery } from "react-responsive";
-import serviceImg from "../Media/Services.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -126,9 +125,7 @@ function Home() {
           </div>
         )}
         <div className="serviceButton">
-          {/* <Button label="View all Services" /> */}
-
-          <img src={serviceImg} alt={""}></img>
+          <Button label="View all Services" />
         </div>
       </div>
       <div className="contactUs">
@@ -142,7 +139,7 @@ function Home() {
             <input placeholder="Your Name"></input>
             <input placeholder="Your Email"></input>
             <textarea placeholder="Your Query" rows={8}></textarea>
-            <div>
+            <div className="contactButton">
               <Button label="Submit" />
             </div>
           </form>

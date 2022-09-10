@@ -95,11 +95,11 @@
       align-items: flex-end;
       justify-content: space-between;
       width: 300px;
-      height: 40px;
+      height: 30px;
       cursor: pointer;
       .hBurger {
-        height: 8px;
-        width: 50%;
+        height: 5px;
+        width: 30%;
         background-color: #ca267b;
         border-radius: 8px;
       }
@@ -126,11 +126,11 @@
         }
         .sideBarCloseButton {
           position: absolute;
-          top: 10px;
+          top: 25px;
           right: 10px;
           // background-color: aliceblue;
           width: 25%;
-          height: 10%;
+          height: 6%;
           cursor: pointer;
         }
         .sideBarCloseButton:before,
