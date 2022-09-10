@@ -10,7 +10,9 @@
   height: 100vh;
   width: 100vw;
   letter-spacing: 5px;
-  z-index: 35;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
   @media screen and (max-width: 1224px) {
     justify-content: center;
   }
@@ -19,6 +21,10 @@
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    @media screen and (max-width: 1224px) {
+      display: cover;
+      width: 200vw;
+    }
   }
   .slogan {
     display: flex;
@@ -59,7 +65,10 @@
   h1 {
     letter-spacing: 8px;
     z-index: 2;
-    // font-size: 1.2em;
+
+    @media screen and (max-width: 1224px) {
+      font-size: 1.4em;
+    }
   }
   .line {
     background-color: #ca267b;
@@ -74,6 +83,7 @@
     z-index: 2;
 
     @media screen and (max-width: 1224px) {
+      text-align: justify;
       width: 100%;
     }
   }
@@ -99,6 +109,9 @@
   h1 {
     letter-spacing: 8px;
     z-index: 3;
+    @media screen and (max-width: 1224px) {
+      font-size: 1.4em;
+    }
   }
   .line {
     height: 2px;
@@ -115,6 +128,7 @@
     z-index: 3;
     @media screen and (max-width: 1224px) {
       width: 90vw;
+      text-align: justify;
     }
   }
   .serviceinfo {
@@ -219,6 +233,9 @@
     }
     h1 {
       letter-spacing: 8px;
+      @media screen and (max-width: 1224px) {
+        font-size: 1.4em;
+      }
     }
     .line {
       height: 2px;

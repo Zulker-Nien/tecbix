@@ -3,7 +3,7 @@ import infoimg1 from "../Media/infoimg1.png";
 import Button from "../Components/Button";
 import HomeBgImage from "../Components/HomeBgImage";
 import { useMediaQuery } from "react-responsive";
-
+import serviceImg from "../Media/Services.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -126,7 +126,9 @@ function Home() {
           </div>
         )}
         <div className="serviceButton">
-          <Button label="View all Services" />
+          {/* <Button label="View all Services" /> */}
+
+          <img src={serviceImg} alt={""}></img>
         </div>
       </div>
       <div className="contactUs">
