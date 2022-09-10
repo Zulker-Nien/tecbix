@@ -1,7 +1,7 @@
-import './Button.css'
+import "./Button.scss";
 
 function Button(props) {
-    return (
+  return (
     <div className="button">
       <button>{props.label}</button>
     </div>

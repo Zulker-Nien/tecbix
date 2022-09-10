@@ -1,32 +1,43 @@
-import introimg from "../Media/introimg.png";
+import introimg from "../Media/topBG.png";
 import infoimg1 from "../Media/infoimg1.png";
 import Button from "../Components/Button";
+import HomeBgImage from "../Components/HomeBgImage";
+import { useMediaQuery } from "react-responsive";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
 import "./Home.scss";
 
 function Home() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
   return (
     <div className="homeContainer">
       <div className="intro">
+        <img src={introimg} alt={""}></img>
         <div className="slogan">
           <div className="name">
             <h1>TECBIX</h1>
           </div>
           <div className="headline">
             <h5>
-              <i>IT Enables Services</i>
+              <i>IT Enabled Services</i>
             </h5>
           </div>
           <div className="catchphrase">
             <h3>Building the future,</h3>
-            <h3>One innovation</h3>
-            <h3>at a time.</h3>
+            <h3>One innovation at a time.</h3>
           </div>
-        </div>
-        <div className="introimg">
-          <img src={introimg} alt={""}></img>
         </div>
       </div>
       <div className="aboutUs">
+        <div className="homeSwirlBackground">
+          <HomeBgImage />
+        </div>
         <h1>Get to know us</h1>
         <div className="line"></div>
         <p>
@@ -47,48 +58,92 @@ function Home() {
           innovation and quality. We don't just talk about being a flexible
           partner for your business; we live
         </p>
-        <div className="serviceinfo">
-          <div className="info">
-            <img src={infoimg1} alt={""}></img>
-            <h6>Startup Setup</h6>
+        {isTabletOrMobile ? (
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="serviceinfo"
+          >
+            <SwiperSlide>
+              <div className="info">
+                <img src={infoimg1} alt={""}></img>
+                <h6>Startup Setup</h6>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="info">
+                <img src={infoimg1} alt={""}></img>
+                <h6>Startup Setup</h6>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="info">
+                <img src={infoimg1} alt={""}></img>
+                <h6>Startup Setup</h6>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="info">
+                <img src={infoimg1} alt={""}></img>
+                <h6>Startup Setup</h6>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="info">
+                <img src={infoimg1} alt={""}></img>
+                <h6>Startup Setup</h6>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        ) : (
+          <div className="serviceinfo">
+            <div className="info">
+              <img src={infoimg1} alt={""}></img>
+              <h6>Startup Setup</h6>
+            </div>
+            <div className="info">
+              <img src={infoimg1} alt={""}></img>
+              <h6>Startup Setup</h6>
+            </div>
+            <div className="info">
+              <img src={infoimg1} alt={""}></img>
+              <h6>Startup Setup</h6>
+            </div>
+            <div className="info">
+              <img src={infoimg1} alt={""}></img>
+              <h6>Startup Setup</h6>
+            </div>
+            <div className="info">
+              <img src={infoimg1} alt={""}></img>
+              <h6>Startup Setup</h6>
+            </div>
           </div>
-          <div className="info">
-            <img src={infoimg1} alt={""}></img>
-            <h6>Startup Setup</h6>
-          </div>
-          <div className="info">
-            <img src={infoimg1} alt={""}></img>
-            <h6>Startup Setup</h6>
-          </div>
-          <div className="info">
-            <img src={infoimg1} alt={""}></img>
-            <h6>Startup Setup</h6>
-          </div>
-          <div className="info">
-            <img src={infoimg1} alt={""}></img>
-            <h6>Startup Setup</h6>
-          </div>
-        </div>
-        <div>
+        )}
+        <div className="serviceButton">
           <Button label="View all Services" />
         </div>
       </div>
       <div className="contactUs">
+        <div className="homeSwirlBackgroundContact">
+          <HomeBgImage />
+        </div>
         <div className="contactform">
           <h1>GET IN TOUCH</h1>
           <div className="line"></div>
-          <div className="form">
-            <input className="formInput" placeholder="Your Name"></input>
-            <input className="formInput" placeholder="Your Email"></input>
-            <textarea
-              className="formInput"
-              placeholder="Your Query"
-              rows={8}
-            ></textarea>
-          </div>
-          <div>
-            <Button label="Submit" />
-          </div>
+          <form className="form">
+            <input placeholder="Your Name"></input>
+            <input placeholder="Your Email"></input>
+            <textarea placeholder="Your Query" rows={8}></textarea>
+            <div>
+              <Button label="Submit" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
