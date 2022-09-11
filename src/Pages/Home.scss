@@ -34,6 +34,9 @@
     min-width: 50%;
     // background-color: #fff;
     z-index: 2;
+    @media screen and (max-width: 1224px) {
+      width: 80vw;
+    }
     .name {
       letter-spacing: 12px;
       font-size: 1.8em;
@@ -168,6 +171,7 @@
       justify-content: center;
       align-items: center;
       z-index: 3;
+      transition: 0.2s linear all;
       @media screen and (max-width: 1224px) {
         height: 70%;
         width: 65%;
@@ -181,10 +185,14 @@
       h6 {
         letter-spacing: 2px;
         font-size: 1em;
-        padding: 0%;
+        padding: 2%;
+        text-align: center;
         margin: 0;
         z-index: 3;
       }
+    }
+    .info:hover {
+      scale: 1.1;
     }
     .swiper-pagination-bullet {
       background-color: #0d99a3;
@@ -199,6 +207,7 @@
       color: #ca267b;
     }
   }
+
   .serviceButton {
     z-index: 3;
     transition: 0.1s linear all;

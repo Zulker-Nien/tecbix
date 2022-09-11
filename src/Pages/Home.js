@@ -1,5 +1,11 @@
+import React, { useRef } from "react";
+
 import introimg from "../Media/topBG.png";
 import infoimg1 from "../Media/infoimg1.png";
+import infoimg2 from "../Media/infoimg2.png";
+import infoimg3 from "../Media/infoimg3.png";
+import infoimg4 from "../Media/infoimg4.png";
+import infoimg5 from "../Media/infoimg5.png";
 import Button from "../Components/Button";
 import HomeBgImage from "../Components/HomeBgImage";
 import { useMediaQuery } from "react-responsive";
@@ -11,8 +17,32 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import "./Home.scss";
 
+import emailjs from "@emailjs/browser";
+
 function Home() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    emailjs
+      .sendForm(
+        "service_7o1rkpr",
+        "template_6a8zyxg",
+        form.current,
+        "9nHI7wpXTvokwU1vi"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.preventDefault();
+    e.target.reset();
+  };
 
   return (
     <div className="homeContainer">
@@ -23,9 +53,7 @@ function Home() {
             <h1>TECBIX</h1>
           </div>
           <div className="headline">
-            <h5>
-              <i>IT Enabled Services</i>
-            </h5>
+            <h5>IT Enabled Services</h5>
           </div>
           <div className="catchphrase">
             <h3>Building the future,</h3>
@@ -77,25 +105,25 @@ function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="info">
-                <img src={infoimg1} alt={""}></img>
+                <img src={infoimg2} alt={""}></img>
                 <h6>Startup Setup</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="info">
-                <img src={infoimg1} alt={""}></img>
+                <img src={infoimg3} alt={""}></img>
                 <h6>Startup Setup</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="info">
-                <img src={infoimg1} alt={""}></img>
+                <img src={infoimg4} alt={""}></img>
                 <h6>Startup Setup</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="info">
-                <img src={infoimg1} alt={""}></img>
+                <img src={infoimg5} alt={""}></img>
                 <h6>Startup Setup</h6>
               </div>
             </SwiperSlide>
@@ -107,20 +135,20 @@ function Home() {
               <h6>Startup Setup</h6>
             </div>
             <div className="info">
-              <img src={infoimg1} alt={""}></img>
-              <h6>Startup Setup</h6>
+              <img src={infoimg2} alt={""}></img>
+              <h6>HR Services</h6>
             </div>
             <div className="info">
-              <img src={infoimg1} alt={""}></img>
-              <h6>Startup Setup</h6>
+              <img src={infoimg3} alt={""}></img>
+              <h6>Outsourcing</h6>
             </div>
             <div className="info">
-              <img src={infoimg1} alt={""}></img>
-              <h6>Startup Setup</h6>
+              <img src={infoimg4} alt={""}></img>
+              <h6>Web Development</h6>
             </div>
             <div className="info">
-              <img src={infoimg1} alt={""}></img>
-              <h6>Startup Setup</h6>
+              <img src={infoimg5} alt={""}></img>
+              <h6>Marketing</h6>
             </div>
           </div>
         )}
@@ -135,13 +163,18 @@ function Home() {
         <div className="contactform">
           <h1>GET IN TOUCH</h1>
           <div className="line"></div>
-          <form className="form">
-            <input placeholder="Your Name"></input>
-            <input placeholder="Your Email"></input>
-            <textarea placeholder="Your Query" rows={8}></textarea>
-            <div className="contactButton">
-              <Button label="Submit" />
-            </div>
+          <form className="form" ref={form} onSubmit={sendEmail}>
+            <input placeholder="Your Name" type="name" name="name" />
+            <input placeholder="Your Email" type="email" name="email" />
+            <textarea
+              placeholder="Your Query"
+              rows={8}
+              type="text"
+              name="message"
+            />
+            {/* <div className="contactButton"> */}
+            <Button label="Submit" type="submit" value="Send" />
+            {/* </div> */}
           </form>
         </div>
       </div>
