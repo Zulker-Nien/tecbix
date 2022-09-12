@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Loader from "./Components/Loader";
 import Home from "./Pages/Home";
 
 import { ToastContainer } from "react-toastify";
@@ -16,7 +15,7 @@ function App() {
     <>
       <div className="mainContainer">
         <ToastContainer
-          position="top-right"
+          position="bottom-center"
           autoClose={5000}
           hideProgressBar={false}
           newestOnTop={false}
