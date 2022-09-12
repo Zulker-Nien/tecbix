@@ -3,26 +3,34 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
 import Home from "./Pages/Home";
-import { useEffect, useState } from "react";
+
+import { ToastContainer } from "react-toastify";
 
 function App() {
-  const [fetching, setFetching] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setFetching(false);
-    }, 2000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setFetching(false);
+  //   }, 2000);
+  // });
   return (
     <>
-      {fetching ? (
-        <Loader />
-      ) : (
-        <div className="mainContainer">
-          <Navbar />
-          <Home />
-          <Footer />
-        </div>
-      )}
+      <div className="mainContainer">
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
+        <Navbar />
+        <Home />
+        <Footer />
+      </div>
     </>
   );
 }

@@ -18,10 +18,15 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import "./Home.scss";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import emailjs from "@emailjs/browser";
 
 function Home() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
+  const notify = () => toast("Thank you for reaching out.");
 
   const form = useRef();
 
@@ -43,6 +48,7 @@ function Home() {
       );
     e.preventDefault();
     e.target.reset();
+    notify();
   };
 
   return (
