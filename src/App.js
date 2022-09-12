@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setFetching(false);
-    }, 3000);
+    }, 2000);
   });
   return (
     <>
