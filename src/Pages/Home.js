@@ -87,11 +87,14 @@ function Home() {
           <h1>What we do</h1>
           <div className="line"></div>
           <p>
-            A tech-driven company that helps you make sense of your data and get
-            results. With a dedicated team of experts, we strive to be your most
-            reliable technology partner. Tecbix is built on a foundation of
-            innovation and quality. We don't just talk about being a flexible
-            partner for your business; we live
+            Tecbix offers a comprehensive solution to meet the demands of each
+            client for outsourcing any back-office, administrative, and non-core
+            business activities. With the help of our services, enterprises may
+            fulfill their daily data processing requirements without having to
+            worry about the associated operational and managerial
+            responsibilities. We utilize our skilled IT-enabled services to
+            provide you with the highest level of in-business value, and we have
+            the know-how to manage intricate business procedures.
           </p>
           {isTabletOrMobile ? (
             <Swiper
