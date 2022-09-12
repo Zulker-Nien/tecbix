@@ -167,17 +167,23 @@ function Home() {
             <h1>GET IN TOUCH</h1>
             <div className="line"></div>
             <form className="form" ref={form} onSubmit={sendEmail}>
-              <input placeholder="Your Name" type="name" name="name" />
-              <input placeholder="Your Email" type="email" name="email" />
+              <input placeholder="Your Name" type="name" name="name" required />
+              <input
+                placeholder="Your Email"
+                type="email"
+                name="email"
+                required
+              />
               <textarea
                 placeholder="Your Query"
                 rows={8}
                 type="text"
                 name="message"
+                required
               />
-              {/* <div className="contactButton"> */}
-              <Button label="Submit" type="submit" value="Send" />
-              {/* </div> */}
+              <div className="contactButton">
+                <Button label="Submit" type="submit" value="Send" />
+              </div>
             </form>
           </div>
         </div>
