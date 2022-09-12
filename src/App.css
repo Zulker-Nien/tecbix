@@ -13,3 +13,6 @@ body {
   height: 100%;
   width: 100vw;
 }
+.Toastify__progress-bar-theme--dark {
+  background-color: #0d99a3 !important;
+}
