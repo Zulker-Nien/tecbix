@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import { ToastContainer } from "react-toastify";
 
 import { Routes, Route } from "react-router-dom";
+import Services from "./Pages/Services";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
         <Footer />
       </div>
