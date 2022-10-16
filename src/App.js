@@ -5,12 +5,10 @@ import Home from "./Pages/Home";
 
 import { ToastContainer } from "react-toastify";
 
+import { Routes, Route } from "react-router-dom";
+import Services from "./Pages/Services";
+
 function App() {
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setFetching(false);
-  //   }, 2000);
-  // });
   return (
     <>
       <div className="mainContainer">
@@ -27,7 +25,10 @@ function App() {
           theme="dark"
         />
         <Navbar />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
         <Footer />
       </div>
     </>

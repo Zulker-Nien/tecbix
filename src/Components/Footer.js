@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Navbar() {
   return (
     <div className="footer">
-      <h6>+8801742603568</h6>
+      <h6>+8801717755244</h6>
       <ul>
         <li>
           <CgFacebook />
