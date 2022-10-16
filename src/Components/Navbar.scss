@@ -67,17 +67,25 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      color: antiquewhite;
+      color: #0d99a3;
       width: 100%;
       letter-spacing: 5px;
       font-size: 1em;
+
+      a {
+        text-decoration: none;
+        color: #0d99a3;
+        @media screen and (max-width: 1224px) {
+          color: #ca267b;
+        }
+      }
       /* background-color: #ca267b; */
       h6 {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 3% 0%;
-        transition: 0.3s linear all;
+        transition: 0.1s linear all;
       }
       h6:hover {
         cursor: pointer;
@@ -117,12 +125,14 @@
         padding: 0;
         background-color: #0d99a3;
         overflow: hidden;
+        color: #ca267b;
         li {
           display: flex;
           justify-content: center;
           align-items: center;
           font-weight: 700;
           height: 15vh;
+          color: #f0f8ff;
         }
         .sideBarCloseButton {
           position: absolute;
@@ -152,6 +162,47 @@
         }
         // z-index: 22;
       }
+    }
+  }
+}
+
+.serviceDropdownContainer {
+  position: fixed;
+  height: 5vh;
+  width: 90%;
+  margin-top: 10vh;
+  padding: 0 5%;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .serviceDropdownWrapper {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 10px;
+    border: 1px solid #0d99a3;
+    box-shadow: inset 1px 1px 10px #ca267b;
+    ul {
+      height: 100%;
+      width: 90%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      list-style: none;
+      li {
+        color: #0d99a3;
+      }
+      li:nth-child(even) {
+        color: #ca267b;
+      }
+    }
+    p {
+      color: #fff;
     }
   }
 }

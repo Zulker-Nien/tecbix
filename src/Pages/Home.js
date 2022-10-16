@@ -2,20 +2,12 @@ import React, { useRef } from "react";
 
 import introimg from "../Media/topBG.png";
 import infoimg1 from "../Media/infoimg1.png";
-import infoimg2 from "../Media/infoimg2.png";
 import infoimg3 from "../Media/infoimg3.png";
 import infoimg4 from "../Media/infoimg4.png";
 import infoimg5 from "../Media/infoimg5.png";
 import Button from "../Components/Button";
 import HomeBgImage from "../Components/HomeBgImage";
 
-import { useMediaQuery } from "react-responsive";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation, Autoplay } from "swiper";
 import "./Home.scss";
 
 import { toast } from "react-toastify";
@@ -23,9 +15,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 import emailjs from "@emailjs/browser";
 
-function Home() {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+import { Link } from "react-router-dom";
 
+function Home() {
   const notify = () => toast("Thank you for reaching out.");
 
   const form = useRef();
@@ -96,76 +88,29 @@ function Home() {
             provide you with the highest level of in-business value, and we have
             the know-how to manage intricate business procedures.
           </p>
-          {isTabletOrMobile ? (
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={30}
-              loop={true}
-              pagination={{
-                clickable: true,
-              }}
-              autoplay={Autoplay}
-              navigation={true}
-              modules={[Pagination, Navigation]}
-              className="serviceinfo"
-            >
-              <SwiperSlide>
-                <div className="info">
-                  <img src={infoimg1} alt={""}></img>
-                  <h6>Startup Setup</h6>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="info">
-                  <img src={infoimg2} alt={""}></img>
-                  <h6>HR Services</h6>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="info">
-                  <img src={infoimg3} alt={""}></img>
-                  <h6>Outsourcing</h6>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="info">
-                  <img src={infoimg4} alt={""}></img>
-                  <h6>Web Development</h6>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="info">
-                  <img src={infoimg5} alt={""}></img>
-                  <h6>Marketing</h6>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          ) : (
-            <div className="serviceinfo">
-              <div className="info">
-                <img src={infoimg1} alt={""}></img>
-                <h6>Startup Setup</h6>
-              </div>
-              <div className="info">
-                <img src={infoimg2} alt={""}></img>
-                <h6>HR Services</h6>
-              </div>
-              <div className="info">
-                <img src={infoimg3} alt={""}></img>
-                <h6>Outsourcing</h6>
-              </div>
-              <div className="info">
-                <img src={infoimg4} alt={""}></img>
-                <h6>Web Development</h6>
-              </div>
-              <div className="info">
-                <img src={infoimg5} alt={""}></img>
-                <h6>Marketing</h6>
-              </div>
+
+          <div className="serviceinfo">
+            <div className="info">
+              <img src={infoimg1} alt={""}></img>
+              <h6>Startup Setup</h6>
             </div>
-          )}
+            <div className="info">
+              <img src={infoimg3} alt={""}></img>
+              <h6>Outsourcing</h6>
+            </div>
+            <div className="info">
+              <img src={infoimg4} alt={""}></img>
+              <h6>Web Development</h6>
+            </div>
+            <div className="info">
+              <img src={infoimg5} alt={""}></img>
+              <h6>Marketing</h6>
+            </div>
+          </div>
           <div className="serviceButton">
-            <Button label="View all Services" />
+            <Link to="/services">
+              <Button label="View all Services" />
+            </Link>
           </div>
         </div>
         <div className="contactUs">
