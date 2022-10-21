@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 
-import introimg from "../Media/topBG.png";
 import infoimg1 from "../Media/infoimg1.png";
 import infoimg3 from "../Media/infoimg3.png";
 import infoimg4 from "../Media/infoimg4.png";
@@ -16,6 +15,8 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 
 import { Link } from "react-router-dom";
+
+import ModelLoader from "../Components/ModelLoader";
 
 function Home() {
   const notify = () => toast("Thank you for reaching out.");
@@ -47,18 +48,20 @@ function Home() {
     <>
       <div className="homeContainer">
         <div className="intro">
-          <img src={introimg} alt={""}></img>
+          <ModelLoader />
+          {/* <img src={introimg} alt={""}></img> */}
+
           <div className="slogan">
             <div className="name">
-              <h1>TECBIX</h1>
+              <h1>Welcome to TECBIX</h1>
             </div>
             <div className="headline">
-              <h5>IT Enabled Services</h5>
+              <h3>We provide all kinds of IT Enabled Services</h3>
             </div>
-            <div className="catchphrase">
+            {/* <div className="catchphrase">
               <h3>Building the future,</h3>
               <h3>One innovation at a time.</h3>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="aboutUs">
