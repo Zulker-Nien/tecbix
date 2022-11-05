@@ -11,8 +11,13 @@ import Marketing from "./Pages/Services/Marketing";
 import SoftwareDev from "./Pages/Services/SoftwareDev";
 import Outsoucing from "./Pages/Services/Outsoucing";
 import AboutUs from "./Pages/AboutUs";
+import { useEffect } from "react";
+import Aos from "aos";
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  });
   return (
     <>
       <div className="mainContainer">
@@ -31,16 +36,15 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/services/startup-setup" element={<StartupSetup />} />
-          <Route path="/services/marketing" element={<Marketing />} />
+          <Route path="/Services/startup-setup" element={<StartupSetup />} />
+          <Route path="/Services/marketing" element={<Marketing />} />
           <Route
-            path="/services/software-development"
+            path="/Services/software-development"
             element={<SoftwareDev />}
           />
-          <Route path="/services/outsourcing" element={<Outsoucing />} />
+          <Route path="/Services/outsourcing" element={<Outsoucing />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
-        <Footer />
       </div>
     </>
   );

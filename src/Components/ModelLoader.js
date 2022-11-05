@@ -1,28 +1,46 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import "./3d.scss";
 import ThreeDModel from "./ThreeDModel";
-
-import { PerspectiveCamera } from "@react-three/drei";
+import {
+  Scroll,
+  ScrollControls,
+  Environment,
+  Loader,
+  Stars,
+} from "@react-three/drei";
+import HtmlContent from "./HtmlContent";
 
 const ModelLoader = () => {
+  const load = useRef();
+  useEffect(() => {
+    <Loader />;
+  }, [load]);
+
   return (
-    <div className="canvas">
+    <div className="canvas" ref={load} data-aos="fade-in">
       <Canvas>
-        <ambientLight intensity={1} />
-        <directionalLight position={[2, 2, 5]} />
-        <spotLight
-          color={"#ca267b"}
-          position={[0, 10, 0]}
-          intensity={1}
-          penumbra={0}
-          angle={20}
-        />
-        <PerspectiveCamera />
         <Suspense fallback={null}>
-          <ThreeDModel />
+          <ScrollControls pages={6} distance={3.5}>
+            <Scroll>
+              <ThreeDModel />
+              <Stars
+                radius={100}
+                depth={50}
+                count={5000}
+                factor={10}
+                saturation={0}
+                fade
+                speed={1}
+              />
+            </Scroll>
+            <Scroll html>
+              <HtmlContent />
+            </Scroll>
+          </ScrollControls>
         </Suspense>
       </Canvas>
+      <Loader />
     </div>
   );
 };

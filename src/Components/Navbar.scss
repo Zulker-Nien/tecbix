@@ -2,12 +2,12 @@
   z-index: 1;
 }
 .header {
-  height: 10vh;
+  height: 8vh;
   width: 90vw;
   position: fixed;
   display: flex;
   align-items: center;
-  // background-color: #000000;
+  background-color: #000000;
   justify-content: space-between;
   padding: 0 5%;
   overflow: hidden;
@@ -42,12 +42,13 @@
         display: flex;
         align-content: center;
         justify-content: center;
+        transition: scale 0.5s;
         @media screen and (max-width: 1224px) {
           width: 90%;
         }
       }
       img:hover {
-        scale: 0.88;
+        scale: 0.8;
       }
     }
   }
