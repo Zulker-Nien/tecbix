@@ -150,17 +150,25 @@ const HtmlContent = () => {
                 />
                 <p>Your Interests</p>
                 <div className="checklist">
-                  <input type="checkbox" />
-                  <label>Startup-Setup</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Startup-Setup</label>
+                  </div>
                   <br />
-                  <input type="checkbox" />
-                  <label>Marketing</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Marketing</label>
+                  </div>
                   <br />
-                  <input type="checkbox" />
-                  <label>Web Development</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Web Development</label>
+                  </div>
                   <br />
-                  <input type="checkbox" />
-                  <label>Outsourcing</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Outsourcing</label>
+                  </div>
                   <br />
                 </div>
                 <div className="contactButton">
