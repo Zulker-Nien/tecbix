@@ -1,6 +1,5 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 
 import { ToastContainer } from "react-toastify";
@@ -12,8 +11,10 @@ import SoftwareDev from "./Pages/Services/SoftwareDev";
 import Outsoucing from "./Pages/Services/Outsoucing";
 import AboutUs from "./Pages/AboutUs";
 import { useEffect } from "react";
+import Contact from "./Pages/Contact";
+import Assessment from "./Pages/Assessment";
+import Career from "./Pages/Career";
 import Aos from "aos";
-
 function App() {
   useEffect(() => {
     Aos.init();
@@ -44,6 +45,9 @@ function App() {
           />
           <Route path="/Services/outsourcing" element={<Outsoucing />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/assessment" element={<Assessment />} />
         </Routes>
       </div>
     </>

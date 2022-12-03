@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import "./3d.scss";
 
 import emailjs from "@emailjs/browser";
@@ -6,10 +6,8 @@ import Button from "./Button";
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useScroll } from "@react-three/drei";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useFrame } from "@react-three/fiber";
 import Footer from "./Footer";
 import "aos/dist/aos.css";
 gsap.registerPlugin(ScrollTrigger);
@@ -39,64 +37,15 @@ const HtmlContent = () => {
     e.target.reset();
     notify();
   };
-  const scroll = useScroll();
-  // useAnimationFrame((time, delta) => {
-  // })
-  // useEffect(() => {
-  //   // data.offset = current scroll position, between 0 and 1, dampened
-  //   // data.delta = current delta, between 0 and 1, dampened
-
-  //   gsap.to(".canvas", {
-  //     scrollTrigger: {
-  //       scroller: ".HtmlContainer",
-  //       trigger: ".slogan",
-  //       endTrigger: ".about",
-  //       markers: { startColor: "white" },
-  //       start: `top +500px `,
-  //       end: "bottom +500px",
-  //       pin: "true",
-  //       scrub: "1",
-  //       invalidateOnRefresh: true,
-  //       toggleActions: "play reverse",
-  //       onEnter: () =>
-  //         gsap.fromTo(
-  //           ".slogan",
-  //           {
-  //             opacity: 0,
-  //             y: 200,
-  //             duration: 1,
-  //           },
-  //           { opacity: 1, x: 0, duration: 1 }
-  //         ),
-  //       onEnterBack: () =>
-  //         gsap.fromTo(
-  //           ".slogan",
-  //           {
-  //             opacity: 1,
-  //             x: 0,
-  //             duration: 1,
-  //           },
-  //           { opacity: 0, duration: 1 }
-  //         ),
-  //     },
-  //   });
-  // }, [ScrollTrigger]);
 
   const ref = useRef();
-  const data = useScroll();
-  useFrame(() => {
-    const d = data.curve(1 / 3, 1 / 3);
-  });
   return (
     <>
       <div className="HtmlContainer">
         <div className="section1" data-aos="fade-in">
           <div className="slogan" ref={ref}>
-            <h1>
-              Got a <span>dream</span>
-            </h1>
-            <h1> to make that idea</h1>
-            <h1> into a reality?</h1>
+            <h1> Let's make that idea</h1>
+            <h1> into a reality.</h1>
           </div>
         </div>
         <div className="section2">
@@ -109,9 +58,13 @@ const HtmlContent = () => {
         </div>
         <div className="section3">
           <p>
-            <span>Creative</span>, <span>Premium</span>, <span>Unique</span> and{" "}
-            <span>Powerful</span> are just a few words to describe how Tecbix
-            will transform your business
+            <span>Creative</span>
+            <br /> <span>Premium</span>
+            <br /> <span>Unique</span>
+            <br /> <span>Powerful</span> <br />
+            are just a few words to describe how{" "}
+            <span className="Tec">Tec</span>
+            <span className="bix">bix </span> will transform your business
           </p>
         </div>
         <div className="section4">
@@ -121,6 +74,15 @@ const HtmlContent = () => {
               Let us redefine your business efficiency while you enjoy the
               benefits.
             </h3>
+            <span>
+              <a
+                href="/assessment"
+                style={{ textDecoration: "none" }}
+                target="_blank"
+              >
+                <Button label={"Take an assessment"} />
+              </a>
+            </span>
           </div>
         </div>
         <div className="section5">
@@ -150,17 +112,25 @@ const HtmlContent = () => {
                 />
                 <p>Your Interests</p>
                 <div className="checklist">
-                  <input type="checkbox" />
-                  <label>Startup-Setup</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Startup-Setup</label>
+                  </div>
                   <br />
-                  <input type="checkbox" />
-                  <label>Marketing</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Marketing</label>
+                  </div>
                   <br />
-                  <input type="checkbox" />
-                  <label>Web Development</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Web Development</label>
+                  </div>
                   <br />
-                  <input type="checkbox" />
-                  <label>Outsourcing</label>
+                  <div>
+                    <input type="checkbox" />
+                    <label>Outsourcing</label>
+                  </div>
                   <br />
                 </div>
                 <div className="contactButton">

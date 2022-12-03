@@ -15,7 +15,6 @@ const Services = (props) => {
                   key={index}
                   onClick={() => {
                     setShowDesc(index);
-                    // setClicked(true);
                   }}
                   style={{
                     backgroundColor:

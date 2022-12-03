@@ -22,7 +22,7 @@ const ModelLoader = () => {
       <Canvas>
         <Suspense fallback={null}>
           <ScrollControls pages={6} distance={3.5}>
-            <Scroll>
+            <Scroll className="scroll">
               <ThreeDModel />
               <Stars
                 radius={100}

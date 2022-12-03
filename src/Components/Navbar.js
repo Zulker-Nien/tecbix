@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./Navbar.scss";
-import Logo from "../Media/Tecbix2.png";
 import { Link } from "react-router-dom";
+import { observer } from "mobx-react-lite";
+import Store from "../store";
+
 function Navbar() {
+  const store = useContext(Store);
+  const { show, setShow, setFalse } = store;
   const [drawer, setDrawer] = useState(false);
-  const [showServices, setShowServices] = useState(false);
   return (
     <>
       <div
@@ -14,77 +17,93 @@ function Navbar() {
         data-aos-easing="ease-in-out"
         data-aos-offset="200"
       >
-        <div
-          className="logo"
-          onClick={() => {
-            setShowServices(false);
-          }}
-        >
+        <div className="logo" onClick={setFalse}>
           <div>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <img src={Logo} alt={""}></img>
+              <img src={"/2.png"} alt={""}></img>
             </Link>
           </div>
         </div>
         <ul>
-          <li
-            onClick={() => {
-              setShowServices(false);
-            }}
-          >
+          <li onClick={setFalse}>
             <Link to="/about-us" style={{ textDecoration: "none" }}>
               <h6>ABOUT US</h6>
             </Link>
           </li>
-          <li
-            onClick={() => {
-              setShowServices(!showServices);
-            }}
-          >
-            <h6 style={showServices ? { color: "#ca267b" } : { color: "#fff" }}>
+          <li onClick={setShow}>
+            <h6 style={show ? { color: "#fc00ff" } : { color: "#efefef" }}>
               SERVICES
             </h6>
           </li>
-          <li>
-            <h6>CAREER</h6>
+          <li onClick={setFalse}>
+            <Link to="/career" style={{ textDecoration: "none" }}>
+              <h6>CAREER</h6>
+            </Link>
           </li>
-          <li>
-            <h6>CONTACT</h6>
+          <li onClick={setFalse}>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <h6>CONTACT</h6>
+            </Link>
           </li>
         </ul>
 
         {drawer ? (
           <div className="sideBarContainer">
-            <ul>
-              <div
-                className="sideBarCloseButton"
-                onClick={() => {
-                  setDrawer(!drawer);
-                }}
-              ></div>
+            {show ? (
+              ""
+            ) : (
+              <ul>
+                <div
+                  className="sideBarCloseButton"
+                  onClick={() => {
+                    setDrawer(!drawer);
+                  }}
+                ></div>
+                <Link
+                  to="/"
+                  style={{ textDecoration: "none" }}
+                  onClick={() => {
+                    setDrawer(!drawer);
+                  }}
+                >
+                  <li>HOME</li>
+                </Link>
 
-              <Link
-                to="/"
-                style={{ textDecoration: "none" }}
-                onClick={() => {
-                  setDrawer(!drawer);
-                }}
-              >
-                <li>HOME</li>
-              </Link>
-              <li>ABOUT US</li>
-              <Link
-                to="/services"
-                style={{ textDecoration: "none" }}
-                onClick={() => {
-                  setDrawer(!drawer);
-                }}
-              >
-                <li>SERVICES</li>
-              </Link>
-              <li>CAREER</li>
-              <li>CONTACT</li>
-            </ul>
+                <Link
+                  to="/about-us"
+                  style={{ textDecoration: "none" }}
+                  onClick={() => {
+                    setDrawer(!drawer);
+                  }}
+                >
+                  <li>ABOUT US</li>
+                </Link>
+                <Link style={{ textDecoration: "none" }}>
+                  <li onClick={setShow}>SERVICES</li>
+                </Link>
+                <Link
+                  to="/career"
+                  onClick={() => {
+                    setDrawer(!drawer);
+                  }}
+                  style={{ textDecoration: "none" }}
+                >
+                  <li>CAREER</li>
+                </Link>
+
+                <Link
+                  to="/contact"
+                  onClick={() => {
+                    setDrawer(!drawer);
+                  }}
+                  style={{ textDecoration: "none" }}
+                >
+                  <li>CONTACT</li>
+                </Link>
+
+                <img src={"/2.png"} alt={""}></img>
+              </ul>
+            )}
           </div>
         ) : (
           <div
@@ -99,12 +118,13 @@ function Navbar() {
           </div>
         )}
       </div>
-      {showServices && (
+      {show && (
         <div className="serviceDropdownContainer">
           <div className="serviceDropdownWrapper">
             <ul
               onClick={() => {
-                setShowServices(false);
+                setFalse();
+                setDrawer(false);
               }}
             >
               <li>
@@ -132,4 +152,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default observer(Navbar);

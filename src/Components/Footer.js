@@ -4,12 +4,11 @@ import { CgFacebook } from "react-icons/cg";
 import { GrInstagram } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="footer">
-      <h6>+8801717755244</h6>
+      <h6>+880 188 879 9003</h6>
       <ul>
         <li>
           <a

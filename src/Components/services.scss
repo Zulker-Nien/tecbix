@@ -5,22 +5,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1224px) {
+    height: 100%;
+  }
   .serviceWrapper {
     height: 83vh;
     width: 100%;
     background-color: #000;
     display: flex;
+    @media screen and (max-width: 1224px) {
+      flex-direction: column;
+      height: 100%;
+    }
     .topLeft {
       height: 80%;
       width: 40%;
-      padding: 5%;
+      padding: 5% 10%;
       overflow-x: hidden;
       overflow-y: scroll;
+      @media screen and (max-width: 1224px) {
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        padding: 0 5%;
+        margin-top: 10vh;
+      }
 
       h1 {
         margin: 0;
         font-size: 3em;
-        color: #ca267b;
+        color: #fc00ff;
       }
       h3 {
         color: #bdbdbd;
@@ -41,17 +55,20 @@
           transition: background-color 0.5s;
           font-weight: 600;
           cursor: pointer;
+          @media screen and (max-width: 1224px) {
+            height: 5vh;
+          }
         }
 
         p:hover {
-          background-color: #0d99a3;
+          background-color: #00dbde;
           color: #1f1f1f;
         }
       }
     }
     .topRight {
       width: 50%;
-      border-left: 1px solid #0d99a3;
+      border-left: 1px solid #00dbde;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -61,6 +78,11 @@
       transition: width font background-color 1s;
       background-color: #1f1f1f;
       overflow: scroll;
+      @media screen and (max-width: 1224px) {
+        width: 90vw;
+        height: 58vh;
+        border: 0;
+      }
       h1 {
         color: #0d99a3;
       }
