@@ -2,14 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   button {
-    background-image: linear-gradient(to bottom, #c13a7a, #390f23);
+    background-image: linear-gradient(to bottom, #fc00ff, #610f59);
     border: 0px;
     color: antiquewhite;
     letter-spacing: 2px;
-    width: 30vh;
-    height: 7vh;
-    border-radius: 13px;
+    width: 25vh;
+    height: 5vh;
+    border-radius: 20px;
     cursor: pointer;
+    transition: scale 0.3s;
+  }
+  button:hover {
+    scale: 0.93;
   }
 }

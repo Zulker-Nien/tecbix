@@ -13,8 +13,6 @@ const SoftwareDev = () => {
       "Static website development",
       "Dynamic website development",
       "Web app with admin panel",
-      "Cross platform webapp",
-      "Deployment services",
       "Website / Web App maintenance",
     ],
     serviceDesc: [

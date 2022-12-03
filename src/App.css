@@ -12,6 +12,7 @@ body {
 .mainContainer {
   height: 100%;
   width: 100vw;
+  background-color: #000004b7;
 }
 .Toastify__progress-bar-theme--dark {
   background-color: #0d99a3 !important;

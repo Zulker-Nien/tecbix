@@ -7,8 +7,12 @@
   bottom: 0;
   height: 10vh;
   background-color: #000;
-  border-top: 1px solid #0d99a3;
+  border-top: 1px solid #00dbde;
+  h6 {
+    font-size: 0.8em;
+  }
   @media screen and (max-width: 1224px) {
+    overflow: hidden;
     height: 15vh;
     flex-direction: column;
     h6 {
@@ -39,7 +43,7 @@
         transition: 0.3s ease-in-out all;
       }
       a:hover {
-        color: #0d99a3;
+        color: #00dbde;
       }
       @media screen and (max-width: 1224px) {
         margin: 0;
