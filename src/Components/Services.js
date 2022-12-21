@@ -51,6 +51,35 @@ const Services = (props) => {
           <p>{props.serviceDesc[showDesc].para4}</p>
           <p>{props.serviceDesc[showDesc].para5}</p>
           <p>{props.serviceDesc[showDesc].para6}</p>
+          <h1>How will this service Benefit you?</h1>
+          <ul>
+            <li>
+              <p>{props.serviceBenefit[showDesc].para1}</p>
+            </li>
+            <li>
+              <p>{props.serviceBenefit[showDesc].para2}</p>
+            </li>
+            <li>
+              <p>{props.serviceBenefit[showDesc].para3}</p>
+            </li>
+            <li>
+              <p>{props.serviceBenefit[showDesc].para4}</p>
+            </li>
+            <li>
+              <p>{props.serviceBenefit[showDesc].para5}</p>
+            </li>
+            <li>
+              <p>{props.serviceBenefit[showDesc].para6}</p>
+            </li>
+            {props.serviceBenefit[showDesc].para7 == null ? (
+              ""
+            ) : (
+              <li>
+                <p>{props.serviceBenefit[showDesc].para7}</p>
+              </li>
+            )}
+          </ul>
+          <p>{props.serviceBenefit[showDesc].endLine}</p>
         </div>
       </div>
     </div>

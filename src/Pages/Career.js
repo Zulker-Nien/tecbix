@@ -10,13 +10,13 @@ import { GiGrowth, GiExtraTime } from "react-icons/gi";
 import { GoGlobe } from "react-icons/go";
 import { RiParentFill } from "react-icons/ri";
 
-const jobBox = () => {
-  return (
-    <>
-      <div></div>
-    </>
-  );
-};
+// const jobBox = () => {
+//   return (
+//     <>
+//       <div></div>
+//     </>
+//   );
+// };
 const Box = ({ ...props }) => {
   return (
     <div className="boxContainer">

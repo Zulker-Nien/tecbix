@@ -55,6 +55,8 @@ const ThreeDModel = () => {
                 name="Object_2"
                 geometry={nodes.Object_2.geometry}
                 scale={1}
+                castShadow
+                receiveShadow
               >
                 <shaderMaterial
                   fragmentShader={fragmentShader}

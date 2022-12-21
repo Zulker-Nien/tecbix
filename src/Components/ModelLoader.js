@@ -13,7 +13,14 @@ const ModelLoader = () => {
 
   return (
     <div className="canvas" ref={load} data-aos="fade-in">
-      <Canvas>
+      <Canvas shadowMap>
+        <ambientLight intensity={0.1} />
+        <directionalLight
+          intensity={0.5}
+          castShadow
+          shadow-mapSize-height={512}
+          shadow-mapSize-width={512}
+        />
         <Suspense fallback={null}>
           <ScrollControls pages={6} distance={3.5}>
             <Scroll className="scroll">
