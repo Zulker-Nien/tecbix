@@ -11,7 +11,7 @@ const StartupSetup = () => {
       "Quick Feasibility Check",
       "Corporate Identity Setup",
       "Social Media Setup",
-      "Beginner’s Advertisement Setup",
+      "Beginner’s Advertisement",
       "Website",
     ],
     serviceDesc: [

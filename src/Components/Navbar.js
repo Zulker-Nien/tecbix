@@ -6,7 +6,7 @@ import Store from "../store";
 
 function Navbar() {
   const store = useContext(Store);
-  const { show, setShow, setFalse } = store;
+  const { show, setShow, setFalse, department, setDepartment } = store;
   const [drawer, setDrawer] = useState(false);
   return (
     <>
@@ -17,10 +17,17 @@ function Navbar() {
         data-aos-easing="ease-in-out"
         data-aos-offset="200"
       >
-        <div className="logo" onClick={setFalse}>
+        <div
+          className="logo"
+          onClick={() => {
+            setFalse();
+            setDepartment("");
+          }}
+        >
           <div>
             <Link to="/" style={{ textDecoration: "none" }}>
               <img src={"/2.png"} alt={""}></img>
+              <p style={{ color: "#fff" }}>{department}</p>
             </Link>
           </div>
         </div>
@@ -28,6 +35,11 @@ function Navbar() {
           <li onClick={setFalse}>
             <Link to="/about-us" style={{ textDecoration: "none" }}>
               <h6>ABOUT US</h6>
+            </Link>
+          </li>
+          <li onClick={setFalse}>
+            <Link to="/blog" style={{ textDecoration: "none" }}>
+              <h6>BLOG</h6>
             </Link>
           </li>
           <li onClick={setShow}>
@@ -127,11 +139,19 @@ function Navbar() {
                 setDrawer(false);
               }}
             >
-              <li>
+              <li
+                onClick={() => {
+                  setDepartment("Startup Setup");
+                }}
+              >
                 <Link to="/services/startup-setup">Startup Setup</Link>
               </li>
               <li>|</li>
-              <li>
+              <li
+                onClick={() => {
+                  setDepartment("Marketing");
+                }}
+              >
                 <Link to="/services/marketing">Marketing</Link>
               </li>
               <li>|</li>

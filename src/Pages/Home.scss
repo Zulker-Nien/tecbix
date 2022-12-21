@@ -682,7 +682,8 @@
   }
   // background-color: orange;
   .aboutCanvas {
-    height: 100vh;
+    height: 90vh;
+    padding-top: 10vh;
     @media screen and (max-width: 1224px) {
       height: 50vh;
     }

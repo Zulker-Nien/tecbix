@@ -6,8 +6,7 @@ const Services = (props) => {
     <div className="serviceContainer">
       <div className="serviceWrapper">
         <div className="topLeft">
-          <h1>{props.title}</h1>
-          <h3>{props.description}</h3>
+          {/* <h1>{props.title}</h1> */}
           <div className="banner">
             {props.serviceHeaders.map((item, index) => {
               return (
@@ -21,18 +20,24 @@ const Services = (props) => {
                       showDesc === index
                         ? item.clicked
                           ? "#1f1f1f"
-                          : "#0d99a3"
+                          : "#00dbde"
                         : "",
                     color:
                       showDesc === index
                         ? item.clicked
-                          ? "#0d99a3"
+                          ? "#00dbde"
                           : "#1f1f1f"
                         : "",
+                    width:
+                      showDesc === index
+                        ? item.clicked
+                          ? "15vw"
+                          : "15vw"
+                        : "",
+                    transition: "width 0.3s",
                   }}
                 >
                   {item}
-                  {console.log(showDesc)}
                 </p>
               );
             })}
@@ -40,7 +45,10 @@ const Services = (props) => {
         </div>
         <div className="topRight">
           <h1>{props.serviceHeaders[showDesc]}</h1>
-          <p>{props.serviceDesc[showDesc]}</p>
+          <p>{props.serviceDesc[showDesc].para1}</p>
+          <p>{props.serviceDesc[showDesc].para2}</p>
+          <p>{props.serviceDesc[showDesc].para3}</p>
+          <p>{props.serviceDesc[showDesc].para4}</p>
         </div>
       </div>
     </div>
