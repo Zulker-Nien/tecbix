@@ -49,6 +49,8 @@ const Services = (props) => {
           <p>{props.serviceDesc[showDesc].para2}</p>
           <p>{props.serviceDesc[showDesc].para3}</p>
           <p>{props.serviceDesc[showDesc].para4}</p>
+          <p>{props.serviceDesc[showDesc].para5}</p>
+          <p>{props.serviceDesc[showDesc].para6}</p>
         </div>
       </div>
     </div>
