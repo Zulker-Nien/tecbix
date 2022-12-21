@@ -18,9 +18,9 @@
       height: 100%;
     }
     .topLeft {
-      height: 80%;
-      width: 40%;
-      padding: 5% 10%;
+      height: 100%;
+      width: 20%;
+      padding: 0%;
       overflow-x: hidden;
       overflow-y: scroll;
       @media screen and (max-width: 1224px) {
@@ -32,27 +32,32 @@
       }
 
       h1 {
-        margin: 0;
+        margin: 5vh 0 0 0;
         font-size: 3em;
         color: #fc00ff;
+        padding: 0 5%;
       }
       h3 {
         color: #bdbdbd;
+        padding: 0 5%;
       }
       .banner {
-        height: 40%;
-        border-radius: 10px;
+        height: 60%;
+        width: 100%;
+        margin-top: 10vh;
+        // background-color: #00dbde;
         p {
           color: #0d99a3;
+          padding: 0 5%;
           display: flex;
           height: 14%;
-          border-radius: 5px;
-          justify-content: center;
+          width: 55%;
+          border-radius: 0px 10px 10px 0;
+          justify-content: flex-start;
           align-items: center;
           background-color: #1f1f1f;
-          width: 100%;
-          text-align: justify;
-          transition: background-color 0.5s;
+          // text-align: justify;
+          transition: background-color 0.3s;
           font-weight: 600;
           cursor: pointer;
           @media screen and (max-width: 1224px) {
@@ -67,16 +72,16 @@
       }
     }
     .topRight {
-      width: 50%;
-      border-left: 1px solid #00dbde;
+      width: 80%;
+      top: 10vh;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
+      // justify-content: center;
       font-size: 1.5em;
-      padding: 5%;
+      padding: 10vh 5% 5% 5%;
       transition: width font background-color 1s;
-      background-color: #1f1f1f;
+      background-color: #000;
       overflow: scroll;
       @media screen and (max-width: 1224px) {
         width: 90vw;
@@ -84,9 +89,13 @@
         border: 0;
       }
       h1 {
-        color: #0d99a3;
+        background: -webkit-linear-gradient(#fc00ff, #00dbde);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       p {
+        padding: 0;
+        margin: 1% 0;
         color: #bdbdbd;
       }
     }

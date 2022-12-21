@@ -2,13 +2,7 @@ import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import "./3d.scss";
 import ThreeDModel from "./ThreeDModel";
-import {
-  Scroll,
-  ScrollControls,
-  Environment,
-  Loader,
-  Stars,
-} from "@react-three/drei";
+import { Scroll, ScrollControls, Loader, Stars } from "@react-three/drei";
 import HtmlContent from "./HtmlContent";
 
 const ModelLoader = () => {
