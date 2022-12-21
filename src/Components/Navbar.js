@@ -3,17 +3,18 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import Store from "../store";
+import ScrollToTop from "./ScrollToTop";
 
 function Navbar() {
   const store = useContext(Store);
   const { show, setShow, setFalse, department, setDepartment } = store;
   const [drawer, setDrawer] = useState(false);
+
   return (
     <>
       <div
         className="header"
         data-aos="fade-down"
-        // data-aos-duration="800"
         data-aos-easing="ease-in-out"
         data-aos-offset="200"
       >
