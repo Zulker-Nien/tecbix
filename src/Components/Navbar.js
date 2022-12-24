@@ -3,7 +3,6 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import Store from "../store";
-import ScrollToTop from "./ScrollToTop";
 
 function Navbar() {
   const store = useContext(Store);
@@ -113,8 +112,6 @@ function Navbar() {
                 >
                   <li>CONTACT</li>
                 </Link>
-
-                <img src={"/2.png"} alt={""}></img>
               </ul>
             )}
           </div>

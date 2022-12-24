@@ -139,19 +139,25 @@ const AboutUs = () => {
           </div>
           <div className="valueWrapper">
             <div className="valueItem">
-              <GiFist size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <GiFist color={"c5c5c5"} />
+              </div>
               <h1>Motivate the team</h1>
               <h3>
                 Welcome others and help them grow to their full potential.
               </h3>
             </div>
             <div className="valueItem">
-              <GiCube size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <GiCube color={"c5c5c5"} />
+              </div>
               <h1>Discover different perspectives</h1>
               <h3>Listen to understand and speak to explain.</h3>
             </div>
             <div className="valueItem">
-              <GoLaw size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <GoLaw color={"c5c5c5"} />
+              </div>
               <h1>Be Accountable</h1>
               <h3>
                 Back assumptions with data, and make decisions you can own up
@@ -159,7 +165,9 @@ const AboutUs = () => {
               </h3>
             </div>
             <div className="valueItem">
-              <GiFireBowl size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <GiFireBowl color={"c5c5c5"} />
+              </div>
               <h1>Have Passion</h1>
               <h3>
                 Any work is art if you love it, if you love it you will take
@@ -167,12 +175,16 @@ const AboutUs = () => {
               </h3>
             </div>
             <div className="valueItem">
-              <GiGrowth size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <GiGrowth color={"c5c5c5"} />
+              </div>
               <h1>Think improvement</h1>
               <h3>Discover new knowledge whenever you get the chance.</h3>
             </div>
             <div className="valueItem">
-              <HiLightBulb size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <HiLightBulb color={"c5c5c5"} />
+              </div>
               <h1>Be eager to learn</h1>
               <h3>
                 Any work is art if you love it, if you love it you will take
@@ -180,12 +192,16 @@ const AboutUs = () => {
               </h3>
             </div>
             <div className="valueItem">
-              <HiShieldCheck size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <HiShieldCheck color={"c5c5c5"} />
+              </div>
               <h1>Be transparent</h1>
               <h3>Avoid dishonesty and shenanigans at all costs.</h3>
             </div>
             <div className="valueItem">
-              <GiThreeFriends size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <GiThreeFriends color={"c5c5c5"} />
+              </div>
               <h1>Don't be mean</h1>
               <h3>
                 Anything can be communicated with respect and being polite is
@@ -193,7 +209,9 @@ const AboutUs = () => {
               </h3>
             </div>
             <div className="valueItem">
-              <GiNotebook size={60} color={"c5c5c5"} />
+              <div className="icon">
+                <GiNotebook color={"c5c5c5"} />
+              </div>
               <h1>Note the details</h1>
               <h3>Attention to detail is the key to a spotless artwork.</h3>
             </div>

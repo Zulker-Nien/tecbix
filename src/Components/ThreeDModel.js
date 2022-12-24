@@ -59,6 +59,11 @@ const ThreeDModel = () => {
                 receiveShadow
               >
                 <shaderMaterial
+                  // uniforms={() => {
+                  //   color: {
+                  //     value: new THREE.Color("red");
+                  //   }
+                  // }}
                   fragmentShader={fragmentShader}
                   vertexShader={vertexShader}
                 />

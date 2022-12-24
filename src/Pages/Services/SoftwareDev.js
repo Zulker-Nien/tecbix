@@ -8,22 +8,22 @@ const SoftwareDev = () => {
     description:
       "Startup Setup is an idea to support emerging startups in their early stages. The support can be provided through a specific service or a group of services as a package. It is a one time support to act as a kick-starter for a business.",
     serviceHeaders: [
-      "Requirements engineering",
-      "UI/UX design in figma with prototyping",
-      "Static website development",
-      "Interactive website development",
-      "Web app with admin panel",
+      "Requirements Engineering",
+      "UI/UX Design",
+      "Static Website Development",
+      "Interactive Website Development",
+      "WebApp with Admin Panel",
     ],
     serviceDesc: [
       {
         para1:
           "To make your website more user friendly, efficient and easier to maintain, you need to consider investing in requirement engineering and here is why: ",
         para2:
-          "1. Requirement engineering helps you identify and define your website's needs from both a user's and a technical perspective. By using this process, you can make sure that the final product meets your user's needs and also meets your technical specifications.",
+          "Requirement engineering helps you identify and define your website's needs from both a user's and a technical perspective. By using this process, you can make sure that the final product meets your user's needs and also meets your technical specifications.",
         para3:
-          "2. Requirement engineering will also help you create a roadmap for the development of your website. It will provide an opportunity to identify any areas of improvement or changes that need to be made in order to ensure that your website meets your user's needs.",
+          "Requirement engineering will also help you create a roadmap for the development of your website. It will provide an opportunity to identify any areas of improvement or changes that need to be made in order to ensure that your website meets your user's needs.",
         para4:
-          "3. Finally, requirement engineering can help you reduce costs and time associated with website development. By clarifying all of your requirements upfront, you will be able to avoid any costly mistakes or delays due to having to make changes after the website is already built.",
+          "Finally, requirement engineering can help you reduce costs and time associated with website development. By clarifying all of your requirements upfront, you will be able to avoid any costly mistakes or delays due to having to make changes after the website is already built.",
         para5:
           "Investing in requirement engineering is a smart move for any website development project. It will help you create a better product that is more efficient and user friendly, while also helping you save time and money in the process.",
       },
@@ -84,8 +84,6 @@ const SoftwareDev = () => {
           "Enhanced project management: Requirement engineering helps establish a clear project scope and timeline, which can facilitate better project planning and management.",
         para6:
           "Improved customer satisfaction: By meeting the needs and expectations of stakeholders, you can improve customer satisfaction and loyalty.",
-        endLine:
-          "Overall, requirement engineering is an important step in the development process, as it helps ensure that the final product or system meets the needs of all stakeholders and delivers the desired outcomes.",
       },
       {
         para1:
@@ -153,6 +151,35 @@ const SoftwareDev = () => {
         endLine:
           "Overall, web apps offer convenience, flexibility, and cost-effectiveness, making them an attractive option for businesses and individuals looking to streamline their workflow and improve productivity.",
       },
+    ],
+    serviceIncluded: [
+      {
+        item1: "Elicitation",
+        item2: "Analysis",
+        item3: "Documentation",
+        item4: "Validation",
+        item5: "Management",
+      },
+      {
+        item1: "Research",
+        item2: "Wireframing",
+        item3: "Prototyping",
+        item4: "Visual Design",
+        item5: "Responsive Layout",
+        item6: "Usability Testing",
+      },
+    ],
+    serviceNotIncluded: [{}],
+    deliverables: [
+      {
+        item1: "Software Requirements and Specification Documents (SRS)",
+      },
+    ],
+    timeframe: [{ item1: "2", item2: "6" }],
+    idealFor: ["A person with a Webapp or mobile app idea."],
+    customer: [
+      { level: "High", meeting: "Upto 2 meetings per week" },
+      { level: "High", meeting: "Upto 2 meetings per week" },
     ],
   };
 
