@@ -716,6 +716,7 @@
         width: 95%;
         padding: 2.5%;
       }
+
       h1 {
         font-size: 1.5em;
         @media screen and (max-width: 1224px) {
@@ -727,8 +728,8 @@
       padding: 0 5% 0 10%;
       border-right: 1px solid #00dbde;
       @media screen and (max-width: 1224px) {
-        padding: 5%;
-        border-right: 0;
+        border: 0;
+        padding: 2.5%;
       }
       h1 {
         margin: 0;
@@ -736,9 +737,6 @@
         line-height: 90px;
         font-size: 7em;
         color: #c5c5c5;
-        @media screen and (max-width: 1224px) {
-          font-size: 4em;
-        }
       }
       h1:nth-child(2) {
         span:first-child {
@@ -790,6 +788,9 @@
         color: #c5c5c5;
         padding: 5%;
         transition: scale 0.3s;
+        .icon {
+          font-size: 40px;
+        }
         @media screen and (max-width: 1224px) {
           flex-direction: row;
           justify-content: space-between;
