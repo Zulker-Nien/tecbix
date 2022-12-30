@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import StartupSetup from "./Pages/Services/StartupSetup";
 import Marketing from "./Pages/Services/Marketing";
 import SoftwareDev from "./Pages/Services/SoftwareDev";
-import Outsoucing from "./Pages/Services/Outsoucing";
+import Outsourcing from "./Pages/Services/Outsourcing";
 import AboutUs from "./Pages/AboutUs";
 import { useEffect } from "react";
 import Contact from "./Pages/Contact";
@@ -44,7 +44,7 @@ function App() {
             path="/Services/software-development"
             element={<SoftwareDev />}
           />
-          <Route path="/Services/outsourcing" element={<Outsoucing />} />
+          <Route path="/Services/outsourcing" element={<Outsourcing />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />

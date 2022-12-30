@@ -1,15 +1,34 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, Suspense, useEffect } from "react";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import "./services.scss";
 import Button from "./Button";
+import { Canvas } from "@react-three/fiber";
+import Mascot from "./Mascot";
+
 const Services = (props) => {
   const scrollableDiv = useRef(null);
   const handleClick = () => {
     scrollableDiv.current.scrollTop = 0;
+    setAnim(false);
   };
   const [showDesc, setShowDesc] = useState(0);
+  const [anim, setAnim] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollableDiv.current.scrollTop > 1000) {
+        setAnim(true);
+      } else {
+        setAnim(false);
+      }
+      return () => {
+        scrollableDiv.current.removeEventListener("scroll", handleScroll);
+      };
+    };
+
+    scrollableDiv.current.addEventListener("scroll", handleScroll);
+  }, [handleClick]);
   return (
     <div className="serviceContainer">
       <div className="serviceWrapper">
@@ -96,19 +115,27 @@ const Services = (props) => {
               <p>{props.serviceBenefit[showDesc].para4}</p>
             </div>
 
-            <div className="item">
-              <div className="bullet">
-                <VscDebugBreakpointLog color={"#00dbde"} />
+            {props.serviceBenefit[showDesc].para5 == null ? (
+              ""
+            ) : (
+              <div className="item">
+                <div className="bullet">
+                  <VscDebugBreakpointLog color={"#00dbde"} />
+                </div>
+                <p>{props.serviceBenefit[showDesc].para5}</p>
               </div>
-              <p>{props.serviceBenefit[showDesc].para5}</p>
-            </div>
+            )}
 
-            <div className="item">
-              <div className="bullet">
-                <VscDebugBreakpointLog color={"#00dbde"} />
+            {props.serviceBenefit[showDesc].para6 == null ? (
+              ""
+            ) : (
+              <div className="item">
+                <div className="bullet">
+                  <VscDebugBreakpointLog color={"#00dbde"} />
+                </div>
+                <p>{props.serviceBenefit[showDesc].para6}</p>
               </div>
-              <p>{props.serviceBenefit[showDesc].para6}</p>
-            </div>
+            )}
             {props.serviceBenefit[showDesc].para7 == null ? (
               ""
             ) : (
@@ -138,46 +165,106 @@ const Services = (props) => {
                   <div className="check">
                     <RiCheckboxCircleFill color="#00dbde" />
                   </div>
-                  <p>{props.serviceIncluded[showDesc].item1}</p>
+                  <p>{props.serviceChecklist[showDesc].item1}</p>
                 </div>
                 <div className="includedItem">
                   <div className="check">
                     <RiCheckboxCircleFill color="#00dbde" />
                   </div>
-                  <p>{props.serviceIncluded[showDesc].item2}</p>
+                  <p>{props.serviceChecklist[showDesc].item2}</p>
                 </div>
                 <div className="includedItem">
                   <div className="check">
                     <RiCheckboxCircleFill color="#00dbde" />
                   </div>
-                  <p>{props.serviceIncluded[showDesc].item3}</p>
+                  <p>{props.serviceChecklist[showDesc].item3}</p>
                 </div>
-                <div className="includedItem">
-                  <div className="check">
-                    <RiCheckboxCircleFill color="#00dbde" />
+                {props.serviceChecklist[showDesc].item4 == null ? (
+                  ""
+                ) : (
+                  <div className="includedItem">
+                    <div className="check">
+                      <RiCheckboxCircleFill color="#00dbde" />
+                    </div>
+                    <p>{props.serviceChecklist[showDesc].item4}</p>
                   </div>
-                  <p>{props.serviceIncluded[showDesc].item4}</p>
-                </div>
-                <div className="includedItem">
-                  <div className="check">
-                    <RiCheckboxCircleFill color="#00dbde" />
+                )}
+                {props.serviceChecklist[showDesc].item5 == null ? (
+                  ""
+                ) : (
+                  <div className="includedItem">
+                    <div className="check">
+                      <RiCheckboxCircleFill color="#00dbde" />
+                    </div>
+                    <p>{props.serviceChecklist[showDesc].item5}</p>
                   </div>
-                  <p>{props.serviceIncluded[showDesc].item5}</p>
-                </div>
-                <h4 className="price">Starting from $400</h4>
+                )}
+                {props.serviceChecklist[showDesc].item6 == null ? (
+                  ""
+                ) : (
+                  <div className="includedItem">
+                    <div className="check">
+                      <RiCheckboxCircleFill color="#00dbde" />
+                    </div>
+                    <p>{props.serviceChecklist[showDesc].item6}</p>
+                  </div>
+                )}
+                {props.serviceChecklist[showDesc].item7 == null ? (
+                  ""
+                ) : (
+                  <div className="includedItem">
+                    <div className="check">
+                      <RiCheckboxCircleFill color="#00dbde" />
+                    </div>
+                    <p>{props.serviceChecklist[showDesc].item7}</p>
+                  </div>
+                )}
+                <h4 className="price">{props.price[showDesc]}</h4>
               </div>
             </div>
             <div className="includedRight">
               <div className="rightContainers">
-                <h4>Deliverables</h4>
-                <p>{props.deliverables[showDesc].item1}</p>
+                {props.deliverables[showDesc].item1 == null ? (
+                  ""
+                ) : (
+                  <h4>Deliverables</h4>
+                )}
+
+                {props.deliverables[showDesc].item1 == null ? (
+                  ""
+                ) : (
+                  <p>{props.deliverables[showDesc].item1}</p>
+                )}
+                {props.deliverables[showDesc].item2 == null ? (
+                  ""
+                ) : (
+                  <p>{props.deliverables[showDesc].item2}</p>
+                )}
+                {props.deliverables[showDesc].item3 == null ? (
+                  ""
+                ) : (
+                  <p>{props.deliverables[showDesc].item3}</p>
+                )}
+                {props.deliverables[showDesc].item4 == null ? (
+                  ""
+                ) : (
+                  <p>{props.deliverables[showDesc].item4}</p>
+                )}
+                {props.deliverables[showDesc].item5 == null ? (
+                  ""
+                ) : (
+                  <p>{props.deliverables[showDesc].item5}</p>
+                )}
+                {props.deliverables[showDesc].item6 == null ? (
+                  ""
+                ) : (
+                  <p>{props.deliverables[showDesc].item6}</p>
+                )}
               </div>
+
               <div className="rightContainers">
                 <h4>Time Frame</h4>
-                <p>
-                  {props.timeframe[showDesc].item1} to{" "}
-                  {props.timeframe[showDesc].item2} weeks
-                </p>
+                <p>{props.timeframe[showDesc].item1}</p>
                 <p className="pSmall">
                   (Depends on project size and will be confirmed upon analysis.)
                 </p>
@@ -200,16 +287,18 @@ const Services = (props) => {
             </div>
           </div>
           <div className="serviceCTA">
-            <p>
-              Overall, requirement engineering is an important step in the
-              development process, as it helps ensure that the final product or
-              system meets the needs of all stakeholders and delivers the
-              desired outcomes.
-            </p>
+            <p>{props.endLine[showDesc]}</p>
             <Link to="/contact" style={{ textDecoration: "none" }}>
               <Button label="Let's Start" />
             </Link>
           </div>
+        </div>
+        <div className="topModel">
+          <Canvas shadows>
+            <Suspense fallback={null}>
+              <Mascot anim={anim} />
+            </Suspense>
+          </Canvas>
         </div>
       </div>
     </div>

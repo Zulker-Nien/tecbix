@@ -1,12 +1,9 @@
 import React from "react";
 import Footer from "../../Components/Footer";
-
 import Services from "../../Components/Services";
 const SoftwareDev = () => {
   const data = {
     title: "Software Development",
-    description:
-      "Startup Setup is an idea to support emerging startups in their early stages. The support can be provided through a specific service or a group of services as a package. It is a one time support to act as a kick-starter for a business.",
     serviceHeaders: [
       "Requirements Engineering",
       "UI/UX Design",
@@ -32,8 +29,6 @@ const SoftwareDev = () => {
           "We understand that a great user experience is key to keeping customers engaged and coming back for more. That's why we focus on creating intuitive and user-friendly designs that are tailored to your target audience.",
         para2:
           "Our team of experienced designers will work with you to understand your business goals and create a design that reflects your brand and meets the needs of your users. We'll use a variety of design tools and techniques to create wireframes, prototypes, and high-fidelity mockups that showcase the look and feel of your product.",
-        para3:
-          "Don't leave the success of your website or app to chance. Invest in professional UI/UX design and give your customers an experience they'll love. Contact us today to learn more.",
       },
       {
         para1:
@@ -42,8 +37,6 @@ const SoftwareDev = () => {
           "With static website development, you can customize your site to the exact look and feel you want. You can also add graphics, text, and other elements that reflect your business's unique identity. In addition, static websites are highly secure and reliable, as they aren't vulnerable to the same security risks that dynamic websites face.",
         para3:
           "With a static website, you can create a professional online presence for your business without spending a fortune. The cost of development is typically much lower than with dynamic websites, and you won't need to hire a webmaster to maintain your site. If you're looking for an affordable, effective way to create and maintain an online presence for your business, static website development is the perfect solution. Contact us today to get started!",
-        para4:
-          "If you're looking for an affordable, effective way to create and maintain an online presence for your business, static website development is the perfect solution. Contact us today to get started!",
       },
       {
         para1:
@@ -54,8 +47,6 @@ const SoftwareDev = () => {
           "From user-friendly navigation and intuitive design to social media integration and interactive elements, our interactive website development services will ensure that your customers have the best online experience possible. We also provide powerful analytics that will help you to track performance and optimize your website for maximum results.",
         para4:
           "Our team will work with you every step of the way to ensure that the website we develop meets your needs and exceeds your expectations. We are committed to providing you with the highest quality websites that are designed to help you achieve your goals.",
-        para5:
-          "Contact us today to learn more about our interactive website development services and get started on your journey to success.",
       },
       {
         para1:
@@ -66,8 +57,6 @@ const SoftwareDev = () => {
           "We strive to make sure our webapps are of the highest quality, so we use the latest technologies and industry best practices. We also provide ongoing support and maintenance to keep your webapp running smoothly. Our team is available to provide assistance with any issues that might arise, so you can rest assured that your webapp is always in good hands.",
         para4:
           "We understand that every business is unique and has different needs, so we offer flexible pricing and custom solutions that are tailored to your individual requirements. We are committed to providing you with a webapp that will help your business succeed and grow.",
-        para5:
-          "If you're looking for a reliable and affordable webapp development solution, contact us today. Our team is ready to help you.",
       },
     ],
     serviceBenefit: [
@@ -152,7 +141,7 @@ const SoftwareDev = () => {
           "Overall, web apps offer convenience, flexibility, and cost-effectiveness, making them an attractive option for businesses and individuals looking to streamline their workflow and improve productivity.",
       },
     ],
-    serviceIncluded: [
+    serviceChecklist: [
       {
         item1: "Elicitation",
         item2: "Analysis",
@@ -168,18 +157,94 @@ const SoftwareDev = () => {
         item5: "Responsive Layout",
         item6: "Usability Testing",
       },
+      {
+        item1: "Coding",
+        item2: "SEO",
+        item3: "Testing",
+        item4: "Deployment ",
+      },
+      {
+        item1: "CMS",
+        item2: "Interactive elements",
+        item3: "Security measures",
+        item4: "Coding",
+        item5: "Testing",
+        item6: "Deployment",
+        item7: "Maintenance (Free 2 months)",
+      },
+      {
+        item1: "Admin Panel",
+        item2: "Interactive elements",
+        item3: "Security measures",
+        item4: "Coding",
+        item5: "Testing",
+        item6: "Deployment",
+        item7: "Maintenance (Free 2 months)",
+      },
     ],
-    serviceNotIncluded: [{}],
     deliverables: [
       {
         item1: "Software Requirements and Specification Documents (SRS)",
       },
+      {
+        item1: "Design Mockup file",
+        item2: "Sitemap",
+        item3: "Figma file",
+      },
+      {
+        item1: "Code repository",
+        item2: "Domain access",
+        item3: "Hosting access",
+      },
+      {
+        item1: "Code repositories",
+        item2: "Domain access",
+        item3: "Hosting access",
+        item4: "CMS access",
+        item5: "Database access",
+      },
+      {
+        item1: "Code repositories",
+        item2: "Domain access",
+        item3: "Hosting access",
+        item4: "CMS access",
+        item5: "Database access",
+      },
     ],
-    timeframe: [{ item1: "2", item2: "6" }],
-    idealFor: ["A person with a Webapp or mobile app idea."],
+    timeframe: [
+      { item1: "2 to 6 weeks" },
+      { item1: "2 to 6 weeks" },
+      { item1: "4 to 6 weeks" },
+      { item1: "8 to 16 weeks" },
+      { item1: "16 to 36 weeks" },
+    ],
+    idealFor: [
+      "A person with a Webapp or mobile app idea.",
+      "A person with a Webapp or mobile app idea",
+      "A person with a Website idea and UI/UX design",
+      "A person with a Website idea and UI/UX design",
+      "A person with Webapp requirements specification and UI/UX design",
+    ],
     customer: [
       { level: "High", meeting: "Upto 2 meetings per week" },
       { level: "High", meeting: "Upto 2 meetings per week" },
+      { level: "Medium", meeting: "Upto 1 meeting per week" },
+      { level: "Medium", meeting: "Upto 1 meeting per week" },
+      { level: "High", meeting: "Upto 2 meeting per week" },
+    ],
+    price: [
+      "Starting from $400",
+      "Starting from $500",
+      "Starting from $800",
+      "Starting from $1200",
+      "Starting from $5200",
+    ],
+    endLine: [
+      "Overall, requirement engineering is an important step in the development process, as it helps ensure that the final product or system meets the needs of all stakeholders and delivers the desired outcomes.",
+      "Don't leave the success of your website or app to chance. Invest in professional UI/UX design and give your customers an experience they'll love. Contact us today to learn more.",
+      "If you're looking for an affordable, effective way to create and maintain an online presence for your business, static website development is the perfect solution. Contact us today to get started!",
+      "Contact us today to learn more about our interactive website development services and get started on your journey to success.",
+      "If you're looking for a reliable and affordable webapp development solution, contact us today. Our team is ready to help you.",
     ],
   };
 
