@@ -6,6 +6,7 @@ import "./services.scss";
 import Button from "./Button";
 import { Canvas } from "@react-three/fiber";
 import Mascot from "./Mascot";
+import { Loader } from "@react-three/drei";
 
 const Services = (props) => {
   const scrollableDiv = useRef(null);
@@ -299,6 +300,7 @@ const Services = (props) => {
               <Mascot anim={anim} />
             </Suspense>
           </Canvas>
+          <Loader />
         </div>
       </div>
     </div>
