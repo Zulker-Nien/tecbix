@@ -220,6 +220,16 @@ const Services = (props) => {
                     <p>{props.serviceChecklist[showDesc].item7}</p>
                   </div>
                 )}
+                {props.serviceChecklist[showDesc].item8 == null ? (
+                  ""
+                ) : (
+                  <div className="includedItem">
+                    <div className="check">
+                      <RiCheckboxCircleFill color="#00dbde" />
+                    </div>
+                    <p>{props.serviceChecklist[showDesc].item8}</p>
+                  </div>
+                )}
                 <h4 className="price">{props.price[showDesc]}</h4>
               </div>
             </div>

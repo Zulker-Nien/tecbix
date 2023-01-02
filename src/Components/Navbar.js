@@ -32,12 +32,22 @@ function Navbar() {
           </div>
         </div>
         <ul>
-          <li onClick={setFalse}>
+          <li
+            onClick={() => {
+              setFalse();
+              setDepartment("");
+            }}
+          >
             <Link to="/about-us" style={{ textDecoration: "none" }}>
               <h6>ABOUT US</h6>
             </Link>
           </li>
-          <li onClick={setFalse}>
+          <li
+            onClick={() => {
+              setFalse();
+              setDepartment("");
+            }}
+          >
             <Link to="/blog" style={{ textDecoration: "none" }}>
               <h6>BLOG</h6>
             </Link>
@@ -47,12 +57,22 @@ function Navbar() {
               SERVICES
             </h6>
           </li>
-          <li onClick={setFalse}>
+          <li
+            onClick={() => {
+              setFalse();
+              setDepartment("");
+            }}
+          >
             <Link to="/career" style={{ textDecoration: "none" }}>
               <h6>CAREER</h6>
             </Link>
           </li>
-          <li onClick={setFalse}>
+          <li
+            onClick={() => {
+              setFalse();
+              setDepartment("");
+            }}
+          >
             <Link to="/contact" style={{ textDecoration: "none" }}>
               <h6>CONTACT</h6>
             </Link>
@@ -155,7 +175,7 @@ function Navbar() {
               <li>|</li>
               <li
                 onClick={() => {
-                  setDepartment("Software Development");
+                  setDepartment("Development");
                 }}
               >
                 <Link to="/services/software-development">
