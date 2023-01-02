@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
-import {
-  useGLTF,
-  useAnimations,
-  OrbitControls,
-  SpotLight,
-} from "@react-three/drei";
+import { useGLTF, useAnimations, SpotLight } from "@react-three/drei";
+import { LoopOnce } from "three";
 
 const Mascot = (props) => {
   const { scene, animations } = useGLTF("/mascot.glb");
-  const { actions } = useAnimations(animations, scene);
+  const { mixer, actions } = useAnimations(animations, scene);
+  console.log(mixer);
   useEffect(() => {
     if (props.anim) {
       void actions["Armature.001|mixamo.com|Layer0"].crossFadeTo(
-        actions["Armature.001|mixamo.com|Layer0.001"].reset().play(),
+        actions["Armature.001|mixamo.com|Layer0.001"]
+          .reset()
+          .play()
+          .setLoop(LoopOnce),
         0.2,
         true
       );
     } else {
       void actions["Armature.001|mixamo.com|Layer0.001"].crossFadeTo(
         actions["Armature.001|mixamo.com|Layer0"].reset().play(),
-        0.2,
+        0,
         true
       );
     }
