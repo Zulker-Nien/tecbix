@@ -185,6 +185,9 @@
     }
   }
 }
+.header::-webkit-scrollbar {
+  display: none;
+}
 
 .serviceDropdownContainer {
   position: fixed;

@@ -29,7 +29,7 @@ const Services = (props) => {
     };
 
     scrollableDiv.current.addEventListener("scroll", handleScroll);
-  }, [handleClick]);
+  });
   return (
     <div className="serviceContainer">
       <div className="serviceWrapper">
