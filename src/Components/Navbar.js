@@ -153,13 +153,21 @@ function Navbar() {
                 <Link to="/services/marketing">Marketing</Link>
               </li>
               <li>|</li>
-              <li>
+              <li
+                onClick={() => {
+                  setDepartment("Software Development");
+                }}
+              >
                 <Link to="/services/software-development">
                   Software Development
                 </Link>
               </li>
               <li>|</li>
-              <li>
+              <li
+                onClick={() => {
+                  setDepartment("Outsourcing");
+                }}
+              >
                 <Link to="/services/outsourcing">Outsourcing</Link>
               </li>
             </ul>
