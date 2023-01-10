@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { observer } from "mobx-react-lite";
 import {
@@ -29,7 +29,10 @@ const ModelLoad = () => {
   console.log(actions);
   actions["CameraAction.003"].reset().fadeIn(1).play();
   actions["PlaneAction"].reset().fadeIn(1).play();
-
+  const load = useRef();
+  useEffect(() => {
+    <Loader />;
+  }, [load]);
   useFrame((state, delta) => {
     state.camera.position.set(
       cameras[0].position.x, // -209
@@ -64,22 +67,23 @@ const AboutUs = () => {
   return (
     <>
       <div className="aboutUsContainer">
-        <div className="aboutCanvas">
-          <Canvas>
-            <Suspense fallback={null}>
-              <ModelLoad />
-              <Stars
-                radius={100}
-                depth={50}
-                count={5000}
-                factor={10}
-                saturation={0}
-                fade
-                speed={1}
-              />
-            </Suspense>
-          </Canvas>
-          <Loader />
+        <div className="aboutCanvasWrapper">
+          <div className="aboutCanvas">
+            <Canvas>
+              <Suspense fallback={null}>
+                <ModelLoad />
+                <Stars
+                  radius={100}
+                  depth={50}
+                  count={5000}
+                  factor={10}
+                  saturation={0}
+                  fade
+                  speed={1}
+                />
+              </Suspense>
+            </Canvas>
+          </div>
         </div>
         {/* Vision */}
         <div className="missionvisionContainer">

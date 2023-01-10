@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useState, useEffect, useRef } from "react";
 import "./Home.scss";
 import Footer from "../Components/Footer";
 import { Canvas } from "@react-three/fiber";
@@ -10,6 +10,7 @@ import { GiGrowth, GiExtraTime } from "react-icons/gi";
 import { GoGlobe } from "react-icons/go";
 import { RiParentFill } from "react-icons/ri";
 
+// For adding job posts
 // const jobBox = () => {
 //   return (
 //     <>
@@ -29,26 +30,29 @@ const Box = ({ ...props }) => {
   );
 };
 const Career = () => {
+  // For loading specific model
+  const load = useRef();
+  useEffect(() => {
+    <Loader />;
+  }, [load]);
+
   const [job, setJob] = useState(false);
   return (
     <>
       <div className="careerContainer">
-        <div className="modelContainer">
+        <div className="modelContainer" ref={load}>
           <Canvas>
             <Suspense fallback={null}>
               <CareerModel />
-              <Html position={[-1.33, 1.5, 0]}>
+              <Html position={[-3, 1.5, 0]}>
                 <div className="topLead">
                   <h1>Join us in building a culture of innovation</h1>
                 </div>
               </Html>
-              <Html position={[-1.33, 1.15, 0]}>
-                <div className="ring"></div>
-              </Html>
               <Stars
                 radius={100}
                 depth={50}
-                count={5000}
+                count={2000}
                 factor={10}
                 saturation={0}
                 fade

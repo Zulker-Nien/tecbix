@@ -1,4 +1,11 @@
-import React, { useState, useRef, Suspense, useEffect } from "react";
+import React, {
+  useState,
+  useRef,
+  Suspense,
+  useEffect,
+  useContext,
+} from "react";
+import { observer } from "mobx-react-lite";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -7,14 +14,24 @@ import Button from "./Button";
 import { Canvas } from "@react-three/fiber";
 import Mascot from "./Mascot";
 import { Loader } from "@react-three/drei";
+import Store from "../store";
 
 const Services = (props) => {
+  // For removing the department name set under the logo
+  const store = useContext(Store);
+  const { setDepartment } = store;
+
+  // For restarting the scroll position on click on each microservice selection
   const scrollableDiv = useRef(null);
   const handleClick = () => {
     scrollableDiv.current.scrollTop = 0;
     setAnim(false);
   };
+
+  // For traversing the props data
   const [showDesc, setShowDesc] = useState(0);
+
+  // For changing animation on scroll
   const [anim, setAnim] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +47,12 @@ const Services = (props) => {
 
     scrollableDiv.current.addEventListener("scroll", handleScroll);
   });
+
+  // For loading specific model
+  const load = useRef();
+  useEffect(() => {
+    <Loader />;
+  }, [load]);
   return (
     <div className="serviceContainer">
       <div className="serviceWrapper">
@@ -297,24 +320,23 @@ const Services = (props) => {
               </div>
             </div>
           </div>
-          <div className="serviceCTA">
+          <div className="serviceCTA" onClick={() => setDepartment("")}>
             <p>{props.endLine[showDesc]}</p>
             <Link to="/contact" style={{ textDecoration: "none" }}>
               <Button label="Let's Start" />
             </Link>
           </div>
         </div>
-        <div className="topModel">
+        <div className="topModel" ref={load}>
           <Canvas shadows>
             <Suspense fallback={null}>
               <Mascot anim={anim} />
             </Suspense>
           </Canvas>
-          <Loader />
         </div>
       </div>
     </div>
   );
 };
 
-export default Services;
+export default observer(Services);
