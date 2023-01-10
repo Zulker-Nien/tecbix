@@ -512,10 +512,11 @@
   }
   .modelContainer {
     z-index: 2;
-    height: 90vh;
+    height: 40vh;
     width: 100%;
     position: relative;
     background-color: #000004;
+    border-bottom: 0.1px solid #00dbde;
     @media screen and (max-width: 1224px) {
       height: 60vh;
       width: 100vw;
@@ -536,26 +537,12 @@
       }
       // border: 2px solid orange;
       h1 {
+        font-size: 20px;
         margin: 0;
         padding: 0;
         letter-spacing: 0.2em;
-        color: #c5c5c5;
+        color: #00dbde;
       }
-    }
-    .ring {
-      width: 70.5vw;
-      height: 75vw;
-      border-radius: 50% 50%;
-      box-shadow: 0px 0px 50px 10px #00dbde;
-      transition: box-shadow 0.5s;
-      @media screen and (max-width: 1224px) {
-        width: 140vw;
-        margin-left: 22vw;
-        height: 50vh;
-      }
-    }
-    .ring:hover {
-      box-shadow: 0px 0px 50px 10px #fc00ff;
     }
   }
   .workPointContainer {
@@ -677,15 +664,24 @@
 .aboutUsContainer {
   height: 100%;
   width: 100vw;
+  position: relative;
   @media screen and (max-width: 1224px) {
     overflow: hidden;
   }
   // background-color: orange;
-  .aboutCanvas {
-    height: 90vh;
+  .aboutCanvasWrapper {
+    display: flex;
     padding-top: 10vh;
-    @media screen and (max-width: 1224px) {
-      height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid #00dbde;
+    .aboutCanvas {
+      height: 40vh;
+      width: 100vw;
+      justify-self: center;
+      @media screen and (max-width: 1224px) {
+        height: 50vh;
+      }
     }
   }
   .visionContainer {
