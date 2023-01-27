@@ -1,9 +1,12 @@
 import "./Footer.scss";
-import { SiUpwork } from "react-icons/si";
-import { CgFacebook } from "react-icons/cg";
-import { GrInstagram } from "react-icons/gr";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+// import { GrInstagram } from "react-icons/gr";
+import {
+  FaFacebookF,
+  FaTwitterSquare,
+  FaPinterestP,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -17,11 +20,11 @@ function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <CgFacebook />
+            <FaFacebookF />
           </a>
         </li>
         <li>
-          <GrInstagram />
+          <FaInstagram />
         </li>
         <li>
           <a
@@ -30,11 +33,11 @@ function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedinIn />
+            <FaTwitterSquare />
           </a>
         </li>
         <li>
-          <SiUpwork />
+          <FaPinterestP />
         </li>
         <li>
           <a

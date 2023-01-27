@@ -19,6 +19,7 @@ const Mascot = (props) => {
         true
       );
       mixer.addEventListener("finished", (e) => {
+        console.log(e);
         actions["Armature.001|mixamo.com|Layer0.001"]
           .fadeOut(0.5)
           .crossFadeTo(

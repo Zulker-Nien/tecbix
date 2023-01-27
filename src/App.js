@@ -16,6 +16,7 @@ import Assessment from "./Pages/Assessment";
 import Career from "./Pages/Career";
 import Aos from "aos";
 import Blog from "./Pages/Blog";
+import BlogItem from "./Pages/BlogItem";
 function App() {
   useEffect(() => {
     Aos.init();
@@ -50,6 +51,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/career" element={<Career />} />
           <Route path="/assessment" element={<Assessment />} />
+          <Route path="/blogItem" element={<BlogItem />} />
         </Routes>
       </div>
     </>
