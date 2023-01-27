@@ -3,11 +3,10 @@ import {
   useGLTF,
   useAnimations,
   PerspectiveCamera,
-  OrbitControls,
   PresentationControls,
 } from "@react-three/drei";
 const CareerModel = () => {
-  const { scene, animations, materials } = useGLTF("./earth_Small2.glb");
+  const { scene, animations, materials } = useGLTF("./earth.glb");
   const { actions } = useAnimations(animations, scene);
   console.log(materials);
   actions["Base Stack"].reset().fadeIn(0.5).play();
@@ -15,10 +14,10 @@ const CareerModel = () => {
     <group>
       <PerspectiveCamera makeDefault lookAt={scene} position={[0, 1, 2]} />
 
-      <directionalLight
-        position={[0, 4, -10]}
+      <spotLight
+        position={[0, 5, -10]}
         lookAt={scene}
-        intensity={3}
+        intensity={2}
         color={"#c5c5c5"}
       />
 
