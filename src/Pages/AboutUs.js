@@ -24,7 +24,7 @@ import Footer from "../Components/Footer";
 import Button from "../Components/Button";
 
 const ModelLoad = () => {
-  const { scene, animations, cameras } = useGLTF("./aboutTest1.glb");
+  const { scene, animations, cameras } = useGLTF("./aboutModel.glb");
   const { actions } = useAnimations(animations, scene);
   console.log(actions);
   actions["CameraAction.003"].reset().fadeIn(1).play();

@@ -14,7 +14,7 @@ import vertexShader from "./vertexShader";
 
 const ThreeDModel = () => {
   const group = useRef();
-  const { nodes, animations, cameras } = useGLTF("/background2.glb");
+  const { nodes, animations, cameras } = useGLTF("/HomeModel.glb");
   const { actions } = useAnimations(animations, cameras[0]);
 
   console.log(cameras);
