@@ -3,10 +3,14 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Button from "../Components/Button";
-import { SiUpwork } from "react-icons/si";
-import { CgFacebook } from "react-icons/cg";
-import { GrInstagram } from "react-icons/gr";
-import { FaLinkedinIn, FaPhoneAlt, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitterSquare,
+  FaPinterestP,
+  FaYoutube,
+  FaInstagram,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 import "./Home.scss";
 
@@ -106,19 +110,55 @@ const Contact = () => {
             </div>
             <div className="socialInfo">
               <div>
-                <SiUpwork size={20} color="#1c1c1c" />
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://www.facebook.com/tecbixIToutsourcing/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaFacebook size={20} color="#1c1c1c" />
+                </a>
               </div>
               <div>
-                <CgFacebook size={20} color="#1c1c1c" />
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://www.instagram.com/tecbixbd/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaInstagram size={20} color="#1c1c1c" />
+                </a>
               </div>
               <div>
-                <GrInstagram size={20} color="#1c1c1c" />
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://twitter.com/tecbixbd"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaTwitterSquare size={20} color="#1c1c1c" />
+                </a>
+              </div>
+
+              <div>
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://www.pinterest.com/tecbixbd/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaPinterestP size={20} color="#1c1c1c" />
+                </a>
               </div>
               <div>
-                <FaLinkedinIn size={20} color="#1c1c1c" />
-              </div>
-              <div>
-                <FaYoutube size={20} color="#1c1c1c" />
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://www.youtube.com/@tecbixbd"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaYoutube size={20} color="#1c1c1c" />
+                </a>
               </div>
             </div>
           </div>
