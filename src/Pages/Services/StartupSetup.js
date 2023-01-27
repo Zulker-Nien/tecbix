@@ -37,13 +37,13 @@ const StartupSetup = () => {
           "Are you looking to set up a social media business profile? Look no further!",
         para2:
           "Having a strong social media presence is crucial for any business in today's digital age. Not only does it help you connect with your target audience, but it also allows you to showcase your products and services to a wider range.",
-        para2:
-          "Our social media business profile setup service can help you get started on the right track. We will work with you to create a cohesive and visually appealing profile, complete with all the necessary information and branding elements.",
         para3:
-          "We will also help you choose the right social media platforms for your business, and provide guidance on how to effectively use them to connect with and engage your audience.",
+          "Our social media business profile setup service can help you get started on the right track. We will work with you to create a cohesive and visually appealing profile, complete with all the necessary information and branding elements.",
         para4:
-          "Our team of social media experts will handle everything from setting up the profile to creating and scheduling engaging content to get started. This will save you time and allow you to focus on running your business.",
+          "We will also help you choose the right social media platforms for your business, and provide guidance on how to effectively use them to connect with and engage your audience.",
         para5:
+          "Our team of social media experts will handle everything from setting up the profile to creating and scheduling engaging content to get started. This will save you time and allow you to focus on running your business.",
+        para6:
           "Don't miss out on the many benefits of having a strong social media presence. Contact us today to learn more about our social media business profile setup service.",
       },
       {
@@ -122,18 +122,17 @@ const StartupSetup = () => {
         item5: "Simple Management and organizational analysis",
         item6: "Simple Operational analysis",
       },
-
       {
         item1: "Logo (color, black, white)",
         item2: "Letterhead",
         item3: "Business card",
         item4: "Envelope",
         item5: "Signboard",
-        item6: "Packaging",
+        item6: "Packaging(Any 1 item)",
         item7: "Leaflet",
         item8: "Brochure",
         item9: "Catalog",
-        item10: "Promotional items",
+        item10: "Promotional items(Any 1 item)",
       },
       {
         item1: "Platform selection",
@@ -174,7 +173,7 @@ const StartupSetup = () => {
     price: [
       "Starting from $320",
       "Starting from $200",
-      "Starting from $120",
+      "Starting from $150",
       "Starting from $300",
     ],
     customer: [

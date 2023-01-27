@@ -95,7 +95,11 @@ const Contact = () => {
               </span>
               <span>
                 <AiFillMail size={35} color="#0d99a3" />
-                <a href="mailto: info@tebix.com" target="_blank">
+                <a
+                  href="mailto: info@tebix.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <p>info@tebix.com</p>
                 </a>
               </span>

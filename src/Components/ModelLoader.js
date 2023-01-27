@@ -22,7 +22,7 @@ const ModelLoader = () => {
           shadow-mapSize-width={512}
         />
         <Suspense fallback={null}>
-          <ScrollControls pages={6} distance={3.5}>
+          <ScrollControls pages={6} distance={1}>
             <Scroll className="scroll">
               <ThreeDModel />
               <Stars

@@ -16,6 +16,7 @@ class Store {
   setFalse = () => {
     this.show = false;
   };
+
   setDepartment = (department) => {
     this.department = department;
   };

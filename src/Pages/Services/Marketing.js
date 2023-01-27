@@ -193,7 +193,17 @@ const Marketing = () => {
         item7: "Native advertising",
         item8: "Programmatic advertising",
       },
-      {},
+      {
+        item1: "Audience research",
+        item2: "Channel management",
+        item3: "Content creation",
+        item4: "Campaign promotion",
+        item5: "Performance tracking",
+        item6: "Performance analysis",
+        item7: "Campaign optimization",
+        item8: "Budget management",
+        item9: "Post-campaign analysis",
+      },
       {
         item1: "Keyword research",
         item2: "On-page optimization",
@@ -208,7 +218,12 @@ const Marketing = () => {
       { item1: "Extensive market analysis Report" },
       { item1: "Monthly Engagement Report" },
       { item1: "Engagement Analysis and Reports" },
-      { item1: "" },
+      {
+        item1: "Campaign plan",
+        item2: "Budget report",
+        item3: "Performance analysis report",
+        item4: "Post-campaign report",
+      },
       {
         item1: "SEO services",
         item2: "Lead Generation",
@@ -220,7 +235,7 @@ const Marketing = () => {
       { item1: "3-4 weeks" },
       { item1: "Monthly" },
       { item1: "Monthly" },
-      { item1: "Monthly" },
+      { item1: "Monthly subscription" },
       { item1: "Monthly" },
     ],
     price: [
@@ -234,14 +249,15 @@ const Marketing = () => {
       { level: "High", meeting: "Upto 2 meetings per week" },
       { level: "Low", meeting: "1 meeting per month" },
       { level: "Medium", meeting: "Upto 2 meeting per month" },
-      {},
+      { level: "Medium", meeting: "Upto 2 meeting per month" },
       { level: "Medium", meeting: "Upto 2 meeting per month" },
     ],
     idealFor: [
       "A business owner, willing to know more about their market.",
-      "Running businesses looking for the maintenance of their social presence",
-      "",
-      "",
+      "Running businesses looking for the maintenance of their social presence.",
+      "Ideal for running businesses.",
+      "Ideal for running businesses with a specific desired goal.",
+      "Businesses with a website.",
     ],
 
     endLine: [
@@ -249,6 +265,7 @@ const Marketing = () => {
       "Don't let your social media presence fall by the wayside. Invest in professional page maintenance and give your brand the online presence it deserves. Contact us today to learn more.",
       "Don't miss out on valuable marketing opportunities. Invest in professional advertising services and take your business to the next level. Contact us today to learn more",
       "Don't let the demands of campaign management take away from your core business. Invest in professional campaign management and see your marketing efforts pay off. Contact us today to learn more.",
+      "By investing in SEO, you'll be able to reach more potential customers and stand out from your competitors. Don't miss out on this valuable opportunity to grow your business online. Contact us today to learn more about how SEO can benefit you.",
     ],
   };
 
