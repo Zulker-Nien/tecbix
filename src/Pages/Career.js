@@ -24,7 +24,6 @@ const Box = ({ ...props }) => {
       <div className="iconContainer">{props.icon}</div>
       <div className="descContainer">
         <h3>{props.title}</h3>
-        <p>This is a description</p>
       </div>
     </div>
   );

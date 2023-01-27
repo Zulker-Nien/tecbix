@@ -1,14 +1,14 @@
 import "./Footer.scss";
 // import { GrInstagram } from "react-icons/gr";
 import {
-  FaFacebookF,
+  FaFacebook,
   FaTwitterSquare,
   FaPinterestP,
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
 
-function Navbar() {
+function Footer() {
   return (
     <div className="footer">
       <h6>+880 188 879 9003</h6>
@@ -16,20 +16,27 @@ function Navbar() {
         <li>
           <a
             style={{ textDecoration: "none" }}
-            href="https://www.facebook.com/tecbix"
+            href="https://www.facebook.com/tecbixIToutsourcing/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaFacebookF />
+            <FaFacebook />
           </a>
-        </li>
-        <li>
-          <FaInstagram />
         </li>
         <li>
           <a
             style={{ textDecoration: "none" }}
-            href="https://www.linkedin.com/company/tecbix/ "
+            href="https://www.instagram.com/tecbixbd/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </li>
+        <li>
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://twitter.com/tecbixbd"
             target="_blank"
             rel="noreferrer"
           >
@@ -37,12 +44,19 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <FaPinterestP />
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://www.pinterest.com/tecbixbd/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaPinterestP />
+          </a>
         </li>
         <li>
           <a
             style={{ textDecoration: "none" }}
-            href="https://www.youtube.com/channel/UCFA_24jHJsAqZGs0SncMrJQ "
+            href="https://www.youtube.com/@tecbixbd"
             target="_blank"
             rel="noreferrer"
           >
@@ -57,4 +71,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Footer;
