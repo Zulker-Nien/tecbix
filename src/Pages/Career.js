@@ -75,13 +75,13 @@ const Career = () => {
             <div>
               <Box
                 title={"International Opportunities"}
-                icon={<GiGrowth size={30} />}
+                icon={<GoGlobe size={30} />}
               />
             </div>
             <div>
               <Box
                 title={"Growth Opportunities"}
-                icon={<GoGlobe size={30} />}
+                icon={<GiGrowth size={30} />}
               />
             </div>
             <div>
