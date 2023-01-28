@@ -89,6 +89,7 @@ function Navbar() {
                   className="sideBarCloseButton"
                   onClick={() => {
                     setDrawer(!drawer);
+                    setDepartment("");
                   }}
                 ></div>
                 <Link
@@ -96,6 +97,7 @@ function Navbar() {
                   style={{ textDecoration: "none" }}
                   onClick={() => {
                     setDrawer(!drawer);
+                    setDepartment("");
                   }}
                 >
                   <li>HOME</li>
@@ -106,6 +108,7 @@ function Navbar() {
                   style={{ textDecoration: "none" }}
                   onClick={() => {
                     setDrawer(!drawer);
+                    setDepartment("");
                   }}
                 >
                   <li>ABOUT US</li>
@@ -117,6 +120,7 @@ function Navbar() {
                   to="/career"
                   onClick={() => {
                     setDrawer(!drawer);
+                    setDepartment("");
                   }}
                   style={{ textDecoration: "none" }}
                 >
@@ -127,6 +131,7 @@ function Navbar() {
                   to="/contact"
                   onClick={() => {
                     setDrawer(!drawer);
+                    setDepartment("");
                   }}
                   style={{ textDecoration: "none" }}
                 >
@@ -159,7 +164,6 @@ function Navbar() {
             >
               <li
                 onClick={() => {
-                  setFalse();
                   setDepartment("Startup Setup");
                 }}
               >
@@ -168,7 +172,6 @@ function Navbar() {
 
               <li
                 onClick={() => {
-                  setFalse();
                   setDepartment("Marketing");
                 }}
               >
@@ -177,7 +180,6 @@ function Navbar() {
 
               <li
                 onClick={() => {
-                  setFalse();
                   setDepartment("Development");
                 }}
               >
@@ -188,7 +190,6 @@ function Navbar() {
 
               <li
                 onClick={() => {
-                  setFalse();
                   setDepartment("Outsourcing");
                 }}
               >
@@ -196,7 +197,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <i className="back left" onClick={() => setShow(false)}></i>
+          <div className="back left"></div>
         </div>
       )}
     </>
