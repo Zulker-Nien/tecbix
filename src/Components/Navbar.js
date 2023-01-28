@@ -159,6 +159,7 @@ function Navbar() {
             >
               <li
                 onClick={() => {
+                  setFalse();
                   setDepartment("Startup Setup");
                 }}
               >
@@ -167,6 +168,7 @@ function Navbar() {
 
               <li
                 onClick={() => {
+                  setFalse();
                   setDepartment("Marketing");
                 }}
               >
@@ -175,6 +177,7 @@ function Navbar() {
 
               <li
                 onClick={() => {
+                  setFalse();
                   setDepartment("Development");
                 }}
               >
@@ -185,6 +188,7 @@ function Navbar() {
 
               <li
                 onClick={() => {
+                  setFalse();
                   setDepartment("Outsourcing");
                 }}
               >
