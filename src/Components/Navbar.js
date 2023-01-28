@@ -164,7 +164,7 @@ function Navbar() {
               >
                 <Link to="/services/startup-setup">Startup Setup</Link>
               </li>
-              <li>|</li>
+
               <li
                 onClick={() => {
                   setDepartment("Marketing");
@@ -172,7 +172,7 @@ function Navbar() {
               >
                 <Link to="/services/marketing">Marketing</Link>
               </li>
-              <li>|</li>
+
               <li
                 onClick={() => {
                   setDepartment("Development");
@@ -182,7 +182,7 @@ function Navbar() {
                   Software Development
                 </Link>
               </li>
-              <li>|</li>
+
               <li
                 onClick={() => {
                   setDepartment("Outsourcing");
@@ -192,6 +192,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
+          <i className="back left" onClick={() => setShow(false)}></i>
         </div>
       )}
     </>
