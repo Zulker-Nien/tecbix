@@ -42,10 +42,28 @@ const HtmlContent = () => {
   return (
     <>
       <div className="HtmlContainer">
-        <div className="section1" data-aos="fade-in">
+        <div className="section1">
           <div className="slogan" ref={ref}>
-            <h1> Let's make that idea</h1>
-            <h1> into a reality.</h1>
+            <h1 data-aos="fade-in">
+              MINIMIZE{" "}
+              <span
+                data-aos="fade-in"
+                data-aos-delay="50"
+                style={{ color: "#00dbde" }}
+              >
+                PROBLEM
+              </span>
+            </h1>
+            <h1 data-aos="fade-in" data-aos-delay="150">
+              MAXIMIZE{" "}
+              <span
+                style={{ color: "#fc00ff" }}
+                data-aos="fade-in"
+                data-aos-delay="200"
+              >
+                SOLUTION
+              </span>
+            </h1>
           </div>
         </div>
         <div className="section2">

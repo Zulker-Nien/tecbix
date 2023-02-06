@@ -58,7 +58,7 @@ const Services = (props) => {
       <div className="serviceWrapper">
         <div className="topLeft">
           {/* <h1>{props.title}</h1> */}
-          <div className="banner">
+          <div className="banner" data-aos="fade-right">
             {props.serviceHeaders.map((item, index) => {
               return (
                 <p
@@ -99,7 +99,7 @@ const Services = (props) => {
             })}
           </div>
         </div>
-        <div className="topRight" ref={scrollableDiv}>
+        <div className="topRight" ref={scrollableDiv} data-aos="fade-down">
           <h1>{props.serviceHeaders[showDesc]}</h1>
           <div className="serviceDesc">
             <p>{props.serviceDesc[showDesc].para1}</p>

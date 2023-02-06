@@ -41,7 +41,7 @@ const Contact = () => {
   return (
     <>
       <div className="ContactContainer">
-        <div className="contactUs">
+        <div className="contactUs" data-aos="fade-down">
           <div className="contactform">
             <h1>Connect with Us</h1>
             <div className="line"></div>
@@ -88,7 +88,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contactCanvas">
+        <div className="contactCanvas" data-aos="fade-left">
           <div className="informationContainer">
             <div className="contactInfo">
               <span>
