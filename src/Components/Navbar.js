@@ -26,7 +26,13 @@ function Navbar() {
         >
           <div>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <img src={"/2.png"} alt={""}></img>
+              <img
+                src={"/2.png"}
+                width="50%"
+                height="100%"
+                alt={""}
+                loading="lazy"
+              ></img>
               <p style={{ color: "#fff" }}>{department}</p>
             </Link>
           </div>

@@ -9,7 +9,6 @@ const Blog = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        // `*[_type == "blog"]{heading}`
         `*[_type == "blog"]{date,types[],heading,image{asset->{_id,url}},body}`
       )
       .then((data) => setPostData(data))
@@ -29,7 +28,7 @@ const Blog = () => {
               >
                 <div className="blogCard">
                   <div className="image">
-                    <img src={blog.image.asset.url} />
+                    <img src={blog.image.asset.url} alt="blogimg" />
                   </div>
                   <div className="texts">
                     <h3>{blog.heading}</h3>
