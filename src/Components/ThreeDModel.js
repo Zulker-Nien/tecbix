@@ -34,14 +34,14 @@ const ThreeDModel = () => {
       delta
     );
     state.camera.position.set(
-      cameras[0].position.x, // -209
-      cameras[0].position.y, // 102.8
-      cameras[0].position.z // 20.43
+      cameras[0].position.x,
+      cameras[0].position.y,
+      cameras[0].position.z
     );
     state.camera.rotation.set(
-      cameras[0].rotation.x, // v
-      cameras[0].rotation.y, // -1.0832376353088016
-      cameras[0].rotation.z // -1.3574275014966424
+      cameras[0].rotation.x,
+      cameras[0].rotation.y,
+      cameras[0].rotation.z
     );
   });
 
@@ -59,11 +59,6 @@ const ThreeDModel = () => {
                 receiveShadow
               >
                 <shaderMaterial
-                  // uniforms={() => {
-                  //   color: {
-                  //     value: new THREE.Color("red");
-                  //   }
-                  // }}
                   fragmentShader={fragmentShader}
                   vertexShader={vertexShader}
                 />

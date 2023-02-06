@@ -27,7 +27,6 @@ const CareerModel = () => {
           object={scene}
           rotation={[-1, 1, 1]}
           scale={1.2}
-          //   dispose={null}
           emissive={[0.5, 0.5, 0.5]}
         />
       </PresentationControls>
