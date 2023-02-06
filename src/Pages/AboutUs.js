@@ -87,17 +87,17 @@ const AboutUs = () => {
         </div>
         {/* Vision */}
         <div className="missionvisionContainer">
-          <div className="missionvisionTitle">
-            <h1>the</h1>
-            <h1>
+          <div className="missionvisionTitle" data-aos="flip-up">
+            <h1 data-aos="zoom-in">the</h1>
+            <h1 data-aos="zoom-in">
               <span>vis</span>
               <span>ion</span>
             </h1>
-            <h1>we</h1>
-            <h1>have</h1>
+            <h1 data-aos="zoom-in">we</h1>
+            <h1 data-aos="zoom-in">have</h1>
           </div>
           <div className="missionvisionWrapper">
-            <h1>
+            <h1 data-aos="fade-down">
               Tecbix was founded by a team of 5 visionaries with a single goal,
               to break beyond the traditional mindset for running a business and
               replace it with something revolutionary. We want to build a
@@ -109,17 +109,17 @@ const AboutUs = () => {
         {/* Mission */}
         <div className="missionvisionContainer">
           <div className="missionvisionTitle">
-            <h1>the</h1>
-            <h1>
+            <h1 data-aos="zoom-in">the</h1>
+            <h1 data-aos="zoom-in">
               <span>mis</span>
               <span>sion</span>
             </h1>
-            <h1>we</h1>
-            <h1>are</h1>
-            <h1>in</h1>
+            <h1 data-aos="zoom-in">we</h1>
+            <h1 data-aos="zoom-in">are</h1>
+            <h1 data-aos="zoom-in">in</h1>
           </div>
           <div className="missionvisionWrapper">
-            <h1>
+            <h1 data-aos="fade-down">
               Tecbix offers the best strategic solutions to any business of any
               size. We do this by coming up with marketing, technological,
               workforce and operation-related answers to any problems. What sets
@@ -132,16 +132,16 @@ const AboutUs = () => {
         {/* Values */}
         <div className="valueContainer">
           <div className="valueTitle">
-            <h1>the</h1>
-            <h1>
+            <h1 data-aos="zoom-in">the</h1>
+            <h1 data-aos="zoom-in">
               <span>val</span>
               <span>ues</span>
             </h1>
-            <h1>we</h1>
-            <h1>work</h1>
-            <h1>by</h1>
+            <h1 data-aos="zoom-in">we</h1>
+            <h1 data-aos="zoom-in">work</h1>
+            <h1 data-aos="zoom-in">by</h1>
           </div>
-          <div className="valueWrapper">
+          <div className="valueWrapper" data-aos="zoom-in">
             <div className="valueItem">
               <div className="icon">
                 <GiFist color={"c5c5c5"} />
@@ -222,7 +222,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="ctaServiceContainer">
-          <h1>
+          <h1 data-aos="fade-down">
             Browse from our various services or take an assessment to know your
             business needs.
           </h1>

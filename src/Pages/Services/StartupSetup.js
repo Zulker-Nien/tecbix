@@ -43,8 +43,6 @@ const StartupSetup = () => {
           "We will also help you choose the right social media platforms for your business, and provide guidance on how to effectively use them to connect with and engage your audience.",
         para5:
           "Our team of social media experts will handle everything from setting up the profile to creating and scheduling engaging content to get started. This will save you time and allow you to focus on running your business.",
-        para6:
-          "Don't miss out on the many benefits of having a strong social media presence. Contact us today to learn more about our social media business profile setup service.",
       },
       {
         para1:
@@ -55,8 +53,6 @@ const StartupSetup = () => {
           "Our team of experienced professionals will work with you to create a customized advertising plan that fits your budget and meets your business goals. We'll help you choose the right platforms and targeting options to ensure that your ads reach the right audience.",
         para4:
           "We'll also handle the technical aspects of setting up and running your ads, so you can focus on running your business. Plus, we'll provide ongoing support and analysis to help you get the most out of your advertising efforts.",
-        para5:
-          "Don't let a lack of advertising experience hold you back. Contact us today to learn more about our beginner's advertisement setup service. We'll help you get started on the path to success.",
       },
     ],
     serviceBenefit: [
@@ -190,7 +186,9 @@ const StartupSetup = () => {
     ],
     endLine: [
       "Our services are designed to help you make the most informed decision when launching a new business. Contact us today to learn more about our feasibility and market analysis services.",
-      "We believe that great design should be accessible to all businesses, regardless of size. So why not get in touch",
+      "We believe that great design should be accessible to all businesses, regardless of size. So why not get in touch.",
+      "Don't miss out on the many benefits of having a strong social media presence. Contact us today to learn more about our social media business profile setup service.",
+      "Don't let a lack of advertising experience hold you back. Contact us today to learn more about our beginner's advertisement setup service. We'll help you get started on the path to success.",
     ],
   };
 

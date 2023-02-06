@@ -91,6 +91,7 @@ function Navbar() {
                     setDrawer(!drawer);
                     setDepartment("");
                   }}
+                  data-aos="zoom-out"
                 ></div>
                 <Link
                   to="/"
@@ -99,6 +100,8 @@ function Navbar() {
                     setDrawer(!drawer);
                     setDepartment("");
                   }}
+                  data-aos="fade-down"
+                  data-aos-delay="0"
                 >
                   <li>HOME</li>
                 </Link>
@@ -110,10 +113,16 @@ function Navbar() {
                     setDrawer(!drawer);
                     setDepartment("");
                   }}
+                  data-aos="fade-down"
+                  data-aos-delay="50"
                 >
                   <li>ABOUT US</li>
                 </Link>
-                <Link style={{ textDecoration: "none" }}>
+                <Link
+                  style={{ textDecoration: "none" }}
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                >
                   <li onClick={setShow}>SERVICES</li>
                 </Link>
                 <Link
@@ -123,6 +132,8 @@ function Navbar() {
                     setDepartment("");
                   }}
                   style={{ textDecoration: "none" }}
+                  data-aos="fade-down"
+                  data-aos-delay="150"
                 >
                   <li>CAREER</li>
                 </Link>
@@ -134,6 +145,8 @@ function Navbar() {
                     setDepartment("");
                   }}
                   style={{ textDecoration: "none" }}
+                  data-aos="fade-down"
+                  data-aos-delay="200"
                 >
                   <li>CONTACT</li>
                 </Link>
@@ -147,9 +160,21 @@ function Navbar() {
               setDrawer(!drawer);
             }}
           >
-            <div className="hBurger"></div>
-            <div className="hBurger"></div>
-            <div className="hBurger"></div>
+            <div
+              className="hBurger"
+              data-aos="fade-left"
+              data-aos-delay="0"
+            ></div>
+            <div
+              className="hBurger"
+              data-aos="fade-left"
+              data-aos-delay="50"
+            ></div>
+            <div
+              className="hBurger"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            ></div>
           </div>
         )}
       </div>
