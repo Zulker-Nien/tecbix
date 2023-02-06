@@ -6,11 +6,8 @@ import Button from "./Button";
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Footer from "./Footer";
 import "aos/dist/aos.css";
-gsap.registerPlugin(ScrollTrigger);
 const HtmlContent = () => {
   const form = useRef();
 
