@@ -38,7 +38,7 @@ const Mascot = (props) => {
         true
       );
     }
-  }, [actions]);
+  }, [actions, mixer, props.anim]);
 
   return (
     <>
